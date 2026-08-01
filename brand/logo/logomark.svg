@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100" height="100" role="img" aria-labelledby="cbLogoTitle">
+  <title id="cbLogoTitle">CamBridge logomark</title>
+  <!--
+    Concept: a camera aperture ring "bridges" down into a signal arc that
+    lands on two device nodes (iPhone + Mac). Reads as a lens at small
+    sizes; at large sizes the bridge/connection structure is legible too.
+  -->
+  <!-- background -->
+  <circle cx="50" cy="50" r="50" fill="#0C0A08"/>
+
+  <!-- bridge arc connecting the two device nodes -->
+  <path d="M 21 76 Q 50 52 79 76" fill="none" stroke="#6FA8A0" stroke-width="7" stroke-linecap="round"/>
+
+  <!-- device nodes (iPhone / Mac anchors) -->
+  <circle cx="21" cy="76" r="6.5" fill="#6FA8A0"/>
+  <circle cx="79" cy="76" r="6.5" fill="#6FA8A0"/>
+
+  <!-- lens / aperture ring -->
+  <circle cx="50" cy="38" r="21" fill="none" stroke="#E3A855" stroke-width="8"/>
+  <!-- aperture center -->
+  <circle cx="50" cy="38" r="6.5" fill="#E3A855"/>
+</svg>

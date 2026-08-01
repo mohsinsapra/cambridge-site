@@ -3,8 +3,11 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>CamBridge — Turn your iPhone into a live camera for your Mac</title>
-<meta name="description" content="CamBridge Camera (iPhone) and CamBridge Studio (Mac) work together to monitor and remotely control your iPhone camera over Wi-Fi, in portrait or landscape, with no cloud and no accounts.">
+<title>CamBridge — Your iPhone is already a cinema camera. Bridge it to your Mac.</title>
+<meta name="description" content="CamBridge turns the camera you already own into a live monitor and remote-controlled camera for your Mac. See yourself big, shoot vertical or horizontal, tap to focus from your desk — no $1,000 camera rig required.">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="icon" href="favicon-32.png" type="image/png" sizes="32x32">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
 <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -14,7 +17,13 @@
 <header class="site-header">
   <div class="wrap header-inner">
     <a class="brand" href="#top">
-      <span class="brand-mark" aria-hidden="true"></span>
+      <svg class="brand-mark" viewBox="0 0 100 100" aria-hidden="true">
+        <path d="M 21 76 Q 50 52 79 76" fill="none" stroke="var(--accent-2)" stroke-width="9" stroke-linecap="round"/>
+        <circle cx="21" cy="76" r="8" fill="var(--accent-2)"/>
+        <circle cx="79" cy="76" r="8" fill="var(--accent-2)"/>
+        <circle cx="50" cy="38" r="21" fill="none" stroke="var(--accent)" stroke-width="9"/>
+        <circle cx="50" cy="38" r="7" fill="var(--accent)"/>
+      </svg>
       <span class="brand-name">CamBridge</span>
     </a>
     <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="primaryNav">
@@ -24,10 +33,10 @@
       <span class="sr-only">Menu</span>
     </button>
     <nav class="primary-nav" id="primaryNav">
-      <a href="#orientation">Orientation</a>
-      <a href="#features">Remote Control</a>
+      <a href="#orientation">Vertical &amp; Horizontal</a>
+      <a href="#features">Features</a>
       <a href="#how-it-works">How It Works</a>
-      <a href="#roadmap">Roadmap</a>
+      <a href="#roadmap">What's Next</a>
     </nav>
   </div>
 </header>
@@ -39,20 +48,15 @@
     <div class="wrap hero-inner">
       <div class="hero-copy">
         <p class="eyebrow">iPhone Camera &nbsp;·&nbsp; Mac Studio</p>
-        <h1 class="hero-title">Your iPhone is now<br>the best camera<br>on your desk.</h1>
-        <p class="hero-pitch">CamBridge Camera turns your iPhone into a pro camera. CamBridge Studio shows the feed big on your Mac and gives you full remote control — over Wi‑Fi, in portrait or landscape, with nothing sent to the cloud.</p>
+        <h1 class="hero-title">You don't need a<br>$1,000 camera rig.<br>You need <em>CamBridge</em>.</h1>
+        <p class="hero-pitch">Your iPhone already has a cinema-grade camera. Your Mac is already your studio. CamBridge connects them — so you can see your framing big while you record alone, tap your Mac screen to refocus mid-take, and switch between vertical and horizontal without touching a single cable.</p>
         <div class="hero-cta">
           <!-- TESTFLIGHT_IOS_URL -->
           <a class="btn btn-primary" href="#">Join the iPhone beta (TestFlight)</a>
           <!-- TESTFLIGHT_MAC_URL -->
           <a class="btn btn-secondary" href="#">Join the Mac beta (TestFlight)</a>
         </div>
-        <p class="hero-cta-note">Beta links coming very soon.</p>
-        <div class="hero-hud-row" aria-hidden="true">
-          <span class="hud-badge"><span class="rec-dot"></span>REC 00:12</span>
-          <span class="hud-badge">4K/60</span>
-          <span class="hud-badge hud-badge--accent2">WI‑FI · CONNECTED</span>
-        </div>
+        <p class="hero-cta-note">Free beta — join now. Beta links coming very soon.</p>
       </div>
 
       <div class="hero-devices">
@@ -68,7 +72,7 @@
                 <div class="mock-scene mock-scene--portrait"></div>
               </div>
             </div>
-            <span class="hud-label hud-label--under">iPhone · PORTRAIT</span>
+            <span class="hud-label hud-label--under">iPhone · on a small tripod, vertical</span>
           </div>
 
           <div class="link-line" aria-hidden="true">
@@ -91,19 +95,150 @@
                 <div class="mock-scene mock-scene--landscape"></div>
               </div>
             </div>
-            <span class="hud-label hud-label--under">Mac · LANDSCAPE</span>
+            <span class="hud-label hud-label--under">Mac · same shot, big and horizontal</span>
           </div>
         </div>
       </div>
     </div>
   </section>
 
+  <!-- VALUES / CREDIBILITY STRIP -->
+  <section class="values reveal">
+    <div class="wrap">
+      <p class="eyebrow eyebrow--center">Built For</p>
+      <h2 class="section-title section-title--center">Built for creators who ship daily</h2>
+      <p class="section-sub section-sub--center">No fake numbers, no logos we haven't earned yet — just who this is for and what it's meant to make easier.</p>
+
+      <div class="values-grid">
+        <article class="value-card">
+          <h3>Daily uploaders</h3>
+          <p>Talking-head videos, vlogs, and shorts don't leave room for a two-hour rig setup. CamBridge is on in under a minute, every time.</p>
+        </article>
+        <article class="value-card">
+          <h3>Podcasters on camera</h3>
+          <p>Frame yourself properly, see it big on your Mac while you record, and stop squinting at a phone propped up across the room.</p>
+        </article>
+        <article class="value-card">
+          <h3>Course &amp; tutorial makers</h3>
+          <p>Refocus mid-explanation without breaking your flow — tap the shot on your Mac instead of walking over to the phone.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW IT WORKS -->
+  <section class="how-it-works reveal" id="how-it-works">
+    <div class="wrap">
+      <p class="eyebrow eyebrow--center">Setup</p>
+      <h2 class="section-title section-title--center">Connected in under a minute</h2>
+
+      <ol class="steps">
+        <li class="step">
+          <span class="step-num">01</span>
+          <h3>Open CamBridge on your iPhone</h3>
+          <p>Prop your iPhone up — a small tripod, a stand, or just leaning against something — and open the app.</p>
+        </li>
+        <li class="step">
+          <span class="step-num">02</span>
+          <h3>Open CamBridge on your Mac</h3>
+          <p>Open the Mac app on the same Wi‑Fi and your iPhone shows up automatically. No pairing codes.</p>
+        </li>
+        <li class="step">
+          <span class="step-num">03</span>
+          <h3>You're connected — start shooting</h3>
+          <p>Your shot appears big on your Mac in seconds, with full control ready to go.</p>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- FEATURE GRID -->
+  <section class="features reveal" id="features">
+    <div class="wrap">
+      <p class="eyebrow eyebrow--center">What's Shipping Today</p>
+      <h2 class="section-title section-title--center">Everything you need to shoot alone, well</h2>
+      <p class="section-sub section-sub--center">Once you're connected, your Mac becomes the control room. Your iPhone stays put on its tripod while you drive the shot from your desk.</p>
+
+      <div class="feature-grid">
+
+        <article class="feature-card">
+          <span class="feature-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2.5" y="5" width="19" height="14" rx="2.5"/><circle cx="12" cy="12" r="4"/><circle cx="18" cy="8.3" r="1" fill="currentColor" stroke="none"/></svg>
+          </span>
+          <h3>See yourself big</h3>
+          <p>Your iPhone's shot appears full-size on your Mac, so you can actually see your framing while you record alone — no more squinting across the room.</p>
+        </article>
+
+        <article class="feature-card">
+          <span class="feature-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="4" y="7" width="14" height="11" rx="2"/><path d="M18 10.5 22 8v9l-4-2.5"/><circle cx="11" cy="12.5" r="3"/></svg>
+          </span>
+          <h3>Start and stop from your desk</h3>
+          <p>Trigger a photo or start recording on the iPhone without walking over and touching it. Stay in your seat, stay in the moment.</p>
+        </article>
+
+        <article class="feature-card">
+          <span class="feature-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="9"/><path d="M12 4v3M12 17v3M4 12h3M17 12h3"/><circle cx="12" cy="12" r="2.2" fill="currentColor" stroke="none"/></svg>
+          </span>
+          <h3>Tap to focus from your desk</h3>
+          <p>Click anywhere in the Mac preview to pull focus on the iPhone — exactly like tapping the screen, without leaving your chair.</p>
+        </article>
+
+        <article class="feature-card">
+          <span class="feature-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="7"/><circle cx="12" cy="12" r="3.4"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3"/></svg>
+          </span>
+          <h3>Switch lenses instantly</h3>
+          <p>Jump between wide, ultra-wide, and telephoto on the fly, right from the Studio window on your Mac.</p>
+        </article>
+
+        <article class="feature-card">
+          <span class="feature-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5.5"/><circle cx="12" cy="12" r="2"/></svg>
+          </span>
+          <h3>Zoom without walking over</h3>
+          <p>Smooth zoom control driven live from your Mac's trackpad or a slider — dial in the shot mid-take.</p>
+        </article>
+
+        <article class="feature-card">
+          <span class="feature-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2 8 12h3l-1 10 6-12h-3l1-8z"/></svg>
+          </span>
+          <h3>Fill light on demand</h3>
+          <p>Toggle the iPhone's torch for a bit of fill without breaking your shot to reach for the phone.</p>
+        </article>
+
+        <article class="feature-card">
+          <span class="feature-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="9"/><path d="M3.5 12h17M12 3.5v17M6.5 6.5l11 11M17.5 6.5l-11 11"/></svg>
+          </span>
+          <h3>Exposure, dialed in live</h3>
+          <p>Adjust exposure compensation on the fly and watch the change reflected instantly on your Mac.</p>
+        </article>
+
+        <article class="feature-card">
+          <span class="feature-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="7" y="2.5" width="10" height="19" rx="2.2"/><rect x="2.5" y="8" width="7.5" height="8" rx="1.6"/></svg>
+          </span>
+          <h3>Shoot vertical or horizontal</h3>
+          <p>Turn your iPhone and the Studio feed follows instantly, full frame — TikTok and Reels one take, YouTube the next.</p>
+        </article>
+
+      </div>
+
+      <div class="quality-note">
+        <p><span class="mono-badge">TODAY</span> Everything above is live in the beta right now. Full-quality 4K file transfer to your Mac is on the way — see what's next below.</p>
+      </div>
+    </div>
+  </section>
+
   <!-- ORIENTATION DIFFERENTIATOR -->
-  <section class="orientation" id="orientation">
+  <section class="orientation reveal" id="orientation">
     <div class="wrap">
       <p class="eyebrow eyebrow--center">The Money Shot</p>
       <h2 class="section-title section-title--center">Every orientation. Not just one.</h2>
-      <p class="section-sub section-sub--center">Camo and Blackmagic Camera lock you into landscape. Shoot a vertical reel or a portrait interview and you're fighting the app. CamBridge doesn't care which way you're holding your iPhone.</p>
+      <p class="section-sub section-sub--center">Camo and Blackmagic Camera lock you into landscape. Shoot a vertical TikTok or Reel and you're fighting the app. CamBridge doesn't care which way you're holding your iPhone.</p>
 
       <div class="compare-grid">
         <div class="compare-card compare-card--them">
@@ -116,7 +251,7 @@
                 </span>
               </div>
             </div>
-            <p class="compare-caption">Landscape only — rotate the iPhone and the feed breaks or crops</p>
+            <p class="compare-caption">Landscape only — rotate the iPhone for a vertical reel and the feed breaks or crops</p>
           </div>
         </div>
 
@@ -135,136 +270,38 @@
                 </div>
               </div>
             </div>
-            <p class="compare-caption">Portrait or landscape — the Studio feed follows your iPhone instantly, full frame, every time</p>
+            <p class="compare-caption">Vertical for TikTok and Reels, horizontal for YouTube — the same rig, no re-mounting</p>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- FEATURE GRID -->
-  <section class="features" id="features">
-    <div class="wrap">
-      <p class="eyebrow eyebrow--center">From Your Mac</p>
-      <h2 class="section-title section-title--center">Full remote control, zero reaching for your phone</h2>
-      <p class="section-sub section-sub--center">Once CamBridge Studio is connected, your iPhone becomes an input device. Drive everything from your Mac while the phone stays locked on a tripod or mount.</p>
-
-      <div class="feature-grid">
-
-        <article class="feature-card">
-          <span class="feature-icon" aria-hidden="true">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="7" width="14" height="11" rx="2"/><path d="M17 10.5 21 8v9l-4-2.5"/><circle cx="10" cy="12.5" r="3"/></svg>
-          </span>
-          <h3>Photo capture</h3>
-          <p>Trigger a full-resolution still on the iPhone straight from your Mac keyboard.</p>
-        </article>
-
-        <article class="feature-card">
-          <span class="feature-icon" aria-hidden="true">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="8.5"/><circle cx="12" cy="12" r="3.2" fill="currentColor" stroke="none"/></svg>
-          </span>
-          <h3>Video record</h3>
-          <p>Start and stop recording on the iPhone at full quality without touching the device.</p>
-        </article>
-
-        <article class="feature-card">
-          <span class="feature-icon" aria-hidden="true">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="7"/><circle cx="12" cy="12" r="3.4"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3"/></svg>
-          </span>
-          <h3>Lens switching</h3>
-          <p>Jump between wide, ultra‑wide, and telephoto lenses instantly from the Studio window.</p>
-        </article>
-
-        <article class="feature-card">
-          <span class="feature-icon" aria-hidden="true">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="9"/><path d="M12 4v3M12 17v3M4 12h3M17 12h3"/><circle cx="12" cy="12" r="2.2" fill="currentColor" stroke="none"/></svg>
-          </span>
-          <h3>Tap‑to‑focus</h3>
-          <p>Click anywhere in the Mac preview to pull focus on the iPhone, exactly like tapping the screen.</p>
-        </article>
-
-        <article class="feature-card">
-          <span class="feature-icon" aria-hidden="true">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5.5"/><circle cx="12" cy="12" r="2"/></svg>
-          </span>
-          <h3>Zoom</h3>
-          <p>Smooth optical and digital zoom control, driven live from your Mac's trackpad or a slider.</p>
-        </article>
-
-        <article class="feature-card">
-          <span class="feature-icon" aria-hidden="true">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2 8 12h3l-1 10 6-12h-3l1-8z"/></svg>
-          </span>
-          <h3>Torch</h3>
-          <p>Toggle the iPhone's LED torch for fill light without breaking your shot to reach for the phone.</p>
-        </article>
-
-        <article class="feature-card">
-          <span class="feature-icon" aria-hidden="true">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="9"/><path d="M3.5 12h17M12 3.5v17M6.5 6.5l11 11M17.5 6.5l-11 11"/></svg>
-          </span>
-          <h3>Exposure</h3>
-          <p>Dial in exposure compensation on the fly and watch the change reflected live on the Mac.</p>
-        </article>
-
-        <article class="feature-card">
-          <span class="feature-icon" aria-hidden="true">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M8 9h8M8 13h5"/></svg>
-          </span>
-          <h3>Quality selection</h3>
-          <p>Choose 4K, 1080p, or 720p recording quality on the iPhone, set from the Studio app.</p>
-        </article>
-
-      </div>
-
-      <div class="quality-note">
-        <p><span class="mono-badge">4K SOURCE → COMPRESSED PREVIEW</span> Record at full quality — up to 4K — on the iPhone, while the Mac shows a smooth, low-latency compressed preview so the connection never bogs down.</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- HOW IT WORKS -->
-  <section class="how-it-works" id="how-it-works">
-    <div class="wrap">
-      <p class="eyebrow eyebrow--center">Setup</p>
-      <h2 class="section-title section-title--center">Connected in under a minute</h2>
-
-      <ol class="steps">
-        <li class="step">
-          <span class="step-num">01</span>
-          <h3>Open CamBridge Camera on iPhone</h3>
-          <p>Launch the app — it puts your iPhone's camera on the local network, ready to be found.</p>
-        </li>
-        <li class="step">
-          <span class="step-num">02</span>
-          <h3>Open CamBridge Studio on Mac</h3>
-          <p>Launch the Mac app on the same Wi‑Fi network and your iPhone shows up automatically.</p>
-        </li>
-        <li class="step">
-          <span class="step-num">03</span>
-          <h3>Connected instantly over Wi‑Fi</h3>
-          <p>The live feed appears on your Mac in seconds, with full remote control ready to go.</p>
-        </li>
-      </ol>
-    </div>
-  </section>
-
   <!-- PRIVACY -->
-  <section class="privacy">
+  <section class="privacy reveal">
     <div class="wrap privacy-inner">
-      <h2 class="section-title">Built in Swift. No accounts. No cloud.</h2>
-      <p>CamBridge Camera and CamBridge Studio are native Swift apps that talk to each other directly over your local Wi‑Fi network. There's no sign‑up, no server in the middle, and your video never leaves your network. What's on your camera stays between your iPhone and your Mac.</p>
+      <p class="eyebrow">Privacy</p>
+      <h2 class="section-title">No accounts. Nothing leaves your room.</h2>
+      <p>CamBridge Camera and CamBridge Studio talk to each other directly over your local Wi‑Fi network. There's no sign‑up, no server in the middle, and nothing about your shoot leaves your network. Built in Swift, kept simple on purpose — what happens in your room stays between your iPhone and your Mac.</p>
     </div>
   </section>
 
   <!-- ROADMAP -->
-  <section class="roadmap" id="roadmap">
+  <section class="roadmap reveal" id="roadmap">
     <div class="wrap">
       <p class="eyebrow eyebrow--center">Coming Soon</p>
-      <h2 class="section-title section-title--center">What's next for CamBridge</h2>
-      <p class="section-sub section-sub--center">In active development — not yet shipped, no promised dates.</p>
+      <h2 class="section-title section-title--center">What's next in the beta</h2>
+      <p class="section-sub section-sub--center">In active development — not yet shipped, no promised dates. Everything here is honestly labeled Coming Soon until it ships.</p>
 
       <ul class="roadmap-strip">
+        <li class="roadmap-item">
+          <span class="roadmap-tag">SOON</span>
+          <span class="roadmap-text">Full-quality 4K files, auto-transferred straight to your Mac</span>
+        </li>
+        <li class="roadmap-item">
+          <span class="roadmap-tag">SOON</span>
+          <span class="roadmap-text">Multi-phone grid — monitor and switch between several iPhones at once</span>
+        </li>
         <li class="roadmap-item">
           <span class="roadmap-tag">SOON</span>
           <span class="roadmap-text">Record directly on the Mac</span>
@@ -275,11 +312,11 @@
         </li>
         <li class="roadmap-item">
           <span class="roadmap-tag">SOON</span>
-          <span class="roadmap-text">USB cable streaming</span>
+          <span class="roadmap-text">USB cable streaming, for when Wi‑Fi isn't an option</span>
         </li>
         <li class="roadmap-item">
           <span class="roadmap-tag">SOON</span>
-          <span class="roadmap-text">HEVC streaming</span>
+          <span class="roadmap-text">HEVC streaming for a sharper preview at lower bandwidth</span>
         </li>
       </ul>
     </div>
@@ -290,15 +327,21 @@
 <footer class="site-footer">
   <div class="wrap footer-inner">
     <div class="footer-brand">
-      <span class="brand-mark" aria-hidden="true"></span>
+      <svg class="brand-mark" viewBox="0 0 100 100" aria-hidden="true">
+        <path d="M 21 76 Q 50 52 79 76" fill="none" stroke="var(--accent-2)" stroke-width="9" stroke-linecap="round"/>
+        <circle cx="21" cy="76" r="8" fill="var(--accent-2)"/>
+        <circle cx="79" cy="76" r="8" fill="var(--accent-2)"/>
+        <circle cx="50" cy="38" r="21" fill="none" stroke="var(--accent)" stroke-width="9"/>
+        <circle cx="50" cy="38" r="7" fill="var(--accent)"/>
+      </svg>
       <span class="brand-name">CamBridge</span>
     </div>
-    <p class="footer-tagline">Your iPhone, live on your Mac. Any orientation, full control, nothing in the cloud.</p>
+    <p class="footer-tagline">Your iPhone is already a cinema camera. Your Mac is already your studio. CamBridge connects them.</p>
     <nav class="footer-links">
       <a href="#top">Overview</a>
-      <a href="#features">Remote Control</a>
+      <a href="#features">Features</a>
       <a href="#how-it-works">How It Works</a>
-      <a href="#roadmap">Roadmap</a>
+      <a href="#roadmap">What's Next</a>
       <a href="privacy.html">Privacy</a>
     </nav>
     <p class="footer-copy">CamBridge Camera + CamBridge Studio.</p>
