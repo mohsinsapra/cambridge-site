@@ -985,3 +985,12 @@ body {
 /* Live demo section */
 .demo-player { max-width: 960px; margin: 2.5rem auto 0; }
 .demo-player video { width: 100%; height: auto; display: block; border-radius: 16px; border: 1px solid rgba(227,168,85,0.25); box-shadow: 0 24px 60px rgba(0,0,0,0.45); background: #000; }
+
+/* Consent banner */
+.consent-bar { position: fixed; left: 16px; right: 16px; bottom: 16px; z-index: 999; display: flex; flex-wrap: wrap; gap: 12px; align-items: center; justify-content: space-between; max-width: 720px; margin: 0 auto; padding: 14px 18px; background: rgba(12,10,8,0.96); border: 1px solid rgba(227,168,85,0.35); border-radius: 14px; box-shadow: 0 12px 40px rgba(0,0,0,0.5); }
+.consent-text { margin: 0; font-size: 0.88rem; color: #EDE3D4; flex: 1 1 320px; }
+.consent-text a { color: #E3A855; }
+.consent-actions { display: flex; gap: 8px; }
+.consent-btn { font: inherit; font-size: 0.85rem; padding: 8px 16px; border-radius: 999px; cursor: pointer; border: 1px solid transparent; }
+.consent-btn--accept { background: #E3A855; color: #0C0A08; font-weight: 600; }
+.consent-btn--decline { background: transparent; color: #EDE3D4; border-color: rgba(237,227,212,0.35); }
