@@ -981,3 +981,7 @@ body {
   .mock-mac { width: 300px; }
   .mock-phone { width: 150px; height: 305px; }
 }
+
+/* Live demo section */
+.demo-player { max-width: 960px; margin: 2.5rem auto 0; }
+.demo-player video { width: 100%; height: auto; display: block; border-radius: 16px; border: 1px solid rgba(227,168,85,0.25); box-shadow: 0 24px 60px rgba(0,0,0,0.45); background: #000; }
