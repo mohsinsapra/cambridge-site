@@ -1,0 +1,70 @@
+# CamBridge
+
+> CamBridge turns your iPhone into a remote-controlled camera and live monitor for your Mac — real vertical or horizontal video, tap-to-focus, and true 4K recording, with no accounts and nothing leaving your local network.
+
+CamBridge is two free TestFlight beta apps built by a solo creator (Alpha Tjänster AB, Sweden): **CamBridge Camera** for iPhone (iOS 17+) and **CamBridge Studio** for Mac (macOS 14+). The iPhone streams its camera to the Mac over local Wi‑Fi; the Mac becomes a big live monitor plus a full remote control — tap-to-focus, shutter/record trigger, zoom, lens switch, exposure, torch. It works in both portrait/vertical and landscape/horizontal. The actual recording is real 4K captured on-device on the iPhone and auto-transferred to the Mac when you stop — the live Mac preview is a separate, lighter monitoring feed, not the saved file.
+
+## The problems CamBridge solves
+
+These are the exact situations people search for and land on this site trying to fix:
+
+- "I want to record vertical video of myself" and see a live monitor of it on my Mac while I shoot alone.
+- "How do I remote control my iPhone camera from my Mac(Book)?" — see the shot big, adjust focus, and hit record without walking over to the phone.
+- Apple's Continuity Camera forces vertical video into landscape: it auto-rotates, stabilizes, and crops portrait footage into a horizontal 16:9 frame.
+- Since macOS Sonoma, QuickTime only shows the iPhone camera in landscape when using iPhone as a camera source — no vertical monitoring.
+- "I want to use my Mac to remotely take photos with my iPhone" — see what the camera sees on the Mac, adjust focus, click the shutter from the Mac. This is tethered shooting, iPhone to Mac.
+- iPhone Mirroring does not support the Camera app, so it can't be used for remote camera control.
+- "I don't want a webcam, I want the real camera." People try Camo Studio (webcam-focused, subscription, locked to landscape), EpocCam (photos only, no real video workflow), Blackmagic Camera (remote control is iPhone-to-iPhone or iPad only, not Mac), and Screen Mirroring (takes over the entire Mac display instead of giving a dedicated monitor window). None of these give real Mac-side remote control of a real vertical-or-horizontal 4K camera feed.
+- Put an iPhone on a tripod or a tall stand and control it entirely from a desk — framing, focus, zoom, exposure, shutter — without touching the phone again mid-shoot.
+
+## What ships today
+
+- Live monitoring: see the iPhone's shot full-size on the Mac, in whatever orientation the iPhone is held (portrait or landscape), full frame, no cropping.
+- Remote shutter/record: start photos or video from the Mac without touching the iPhone.
+- Tap-to-focus from the Mac preview.
+- Lens switching (wide / ultra-wide / telephoto) from the Mac.
+- Zoom control from the Mac (trackpad or slider).
+- Torch (fill light) toggle from the Mac.
+- Exposure compensation adjustment from the Mac, reflected live.
+- Bring-your-own mic: any mic the iPhone can see, including DJI Mic directly over Bluetooth (no receiver) or via its receiver for full quality, plus USB/wired/Bluetooth headsets, switchable from either device with a live level meter.
+- Real 4K recording on the iPhone, auto-transferred to a chosen folder on the Mac when recording stops.
+- No accounts, no sign-up, no cloud server — iPhone and Mac talk directly over local Wi‑Fi.
+
+## Roadmap (not yet shipped, no promised dates)
+
+- Multi-phone grid — monitor and switch between several iPhones at once.
+- Use a second iPhone as a director's monitor and remote.
+- USB cable streaming, for when Wi‑Fi isn't available.
+- Hardware-encoded HEVC streaming for a sharper, lower-bandwidth live preview (recording itself already doesn't depend on the network).
+
+## Requirements
+
+- iPhone: iOS 17.0 or later.
+- Mac: macOS 14.0 or later, Apple silicon or Intel.
+- Both devices on the same local Wi‑Fi network.
+
+## Get it
+
+- iPhone beta (TestFlight): https://testflight.apple.com/join/xmwz6mKR
+- Mac beta (TestFlight): https://testflight.apple.com/join/X9Hu9RXx
+- Both apps are free during the beta.
+
+## Privacy
+
+CamBridge Camera and CamBridge Studio communicate directly over the local Wi‑Fi network. There is no account, no sign-up, and no cloud server in the middle — nothing about a shoot leaves the local network. Full details: https://mohsin.se/cambridge-site/privacy.html
+
+## How CamBridge compares
+
+- **vs Apple Continuity Camera / QuickTime iPhone-as-camera**: those tools lock the iPhone camera feed to a landscape webcam frame and crop or rotate vertical video. CamBridge streams the true portrait or landscape frame with no cropping, and adds full remote control (focus, shutter, zoom, exposure, lens switch) that Continuity Camera does not offer.
+- **vs Camo Studio**: Camo is a subscription webcam app focused on calls/streams, locked to landscape. CamBridge is free during beta, supports both orientations, and records real 4K files on the iPhone rather than sending a compressed webcam stream.
+- **vs EpocCam**: EpocCam's core use case is a webcam/photo feed, not a real remote-controlled video workflow. CamBridge gives full video remote control plus real on-device 4K recording.
+- **vs Blackmagic Camera**: Blackmagic's remote-control feature works iPhone-to-iPhone or iPad, not Mac. CamBridge's remote control is built specifically for Mac.
+- **vs Screen Mirroring / iPhone Mirroring**: Screen Mirroring takes over the entire Mac display instead of giving a dedicated camera monitor window, and iPhone Mirroring does not support the Camera app at all. CamBridge is purpose-built for live camera monitoring and control.
+
+## Contact
+
+Email: mohsin.sapra@gmail.com — bug reports and feedback from beta testers directly shape what gets built next.
+
+## Full page content
+
+See https://mohsin.se/cambridge-site/llms-full.txt for the complete homepage content in markdown.

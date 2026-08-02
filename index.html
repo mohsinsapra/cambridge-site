@@ -4,11 +4,143 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>CamBridge — Your iPhone is already a cinema camera. Bridge it to your Mac.</title>
-<meta name="description" content="CamBridge turns the camera you already own into a live monitor and remote-controlled camera for your Mac. See yourself big, shoot vertical or horizontal, tap to focus from your desk — no $1,000 camera rig required.">
+<meta name="description" content="Remote control your iPhone camera from your Mac — record real vertical video, monitor it big, and tap-to-focus from your desk. No landscape crop, no webcam workaround.">
+<meta name="keywords" content="remote control iPhone camera from Mac, record vertical video of myself, iPhone camera monitor on Mac, Continuity Camera vertical video horizontal, QuickTime iPhone camera landscape only, tethered shooting iPhone to Mac, take photos with iPhone from Mac, iPhone Mirroring Camera app alternative, Camo Studio alternative, EpocCam alternative, Blackmagic Camera remote alternative, tripod iPhone remote control Mac">
+<link rel="canonical" href="https://mohsin.se/cambridge-site/">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="icon" href="favicon-32.png" type="image/png" sizes="32x32">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
 <link rel="stylesheet" href="css/style.css?v=2">
+
+<!-- Open Graph -->
+<meta property="og:title" content="CamBridge — Remote control your iPhone camera from your Mac">
+<meta property="og:description" content="See what your iPhone sees, big, on your Mac. Tap to focus, click the shutter, record real vertical video — no crop, no webcam workaround.">
+<meta property="og:url" content="https://mohsin.se/cambridge-site/">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://mohsin.se/cambridge-site/brand/logo/logomark-1024.png">
+<meta property="og:site_name" content="CamBridge">
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="CamBridge — Remote control your iPhone camera from your Mac">
+<meta name="twitter:description" content="See what your iPhone sees, big, on your Mac. Tap to focus, click the shutter, record real vertical video — no crop, no webcam workaround.">
+<meta name="twitter:image" content="https://mohsin.se/cambridge-site/brand/logo/logomark-1024.png">
+
+<!-- JSON-LD: SoftwareApplication -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "CamBridge",
+  "operatingSystem": "iOS 17.0+ / macOS 14.0+",
+  "applicationCategory": "MultimediaApplication",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  },
+  "url": "https://mohsin.se/cambridge-site/",
+  "description": "CamBridge turns your iPhone into a remote-controlled camera and live monitor for your Mac. See your framing big, shoot true vertical or horizontal video without cropping, tap to focus, and record real 4K on-device — footage auto-transfers to your Mac."
+}
+</script>
+
+<!-- JSON-LD: FAQPage -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Do I need Wi‑Fi, or can I use a cable?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Right now CamBridge needs your iPhone and Mac on the same Wi‑Fi network. USB cable streaming is on the roadmap for when Wi‑Fi isn't an option."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is this a finished app?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No — CamBridge is currently a TestFlight beta distributed through Apple's TestFlight program. That means Apple has reviewed the build, but it's still in active development, things can change, and you're trying it before general release. Join via the buttons on this page."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What quality actually gets recorded?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The real recording is full-quality 4K captured on the iPhone itself, and it's auto-transferred to your Mac when you stop. The live preview you see on your Mac while shooting is a separate, lighter monitoring feed — not the file that gets saved. Don't judge final quality by the live preview."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does it work with my DJI wireless mic?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes — two ways. Connect the DJI Mic directly over Bluetooth (no receiver needed) and CamBridge uses it as the recording mic, or plug its receiver into the iPhone for the highest audio quality. One honest physics note: Bluetooth mic audio is voice-call quality on any app — the receiver path always sounds better. The mic's on-body record button reaches the phone only through the receiver (in Bluetooth-only mode DJI's button controls the mic's internal recorder, not your phone — that's a DJI hardware behavior, true in every app)."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does anything leave my network?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. CamBridge has no accounts, no sign-up, and no cloud server in the middle — your iPhone and Mac talk directly over your local Wi‑Fi. See our privacy page for details."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What devices does this need?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "An iPhone running iOS 17 or later, and a Mac running macOS 14 or later (Apple silicon or Intel)."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does it cost anything?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "It's free during the beta. We don't have final pricing figured out yet — when that changes we'll be upfront about it, and people testing it now will be treated well. No specific promises beyond that."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I report a bug or give feedback?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Email mohsin.sapra@gmail.com — real feedback from beta testers directly shapes what gets built next."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How can I use my Mac to remotely take photos with my iPhone?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Open CamBridge Camera on your iPhone and CamBridge Studio on your Mac — the live view shows up big on your Mac, you can tap anywhere in the preview to focus, and click the shutter button from your desk to trigger the photo on the iPhone. No accessories, no cables required."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Why does my vertical iPhone video turn horizontal on the Mac (Continuity Camera / QuickTime)?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Apple's Continuity Camera and QuickTime's iPhone camera source are built around a landscape webcam feed — since macOS Sonoma, they auto-rotate, stabilize, and crop vertical footage into 16:9 horizontal. CamBridge is a different kind of app: it's a dedicated Mac monitor and remote control for the iPhone camera, so it streams and shows the true portrait frame with no rotation or cropping."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is CamBridge a webcam app like Camo or EpocCam?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. Camo and EpocCam turn your iPhone into a webcam feed for calls and streams. CamBridge is a remote camera and monitor system — the recording you get is the real 4K camera file saved on the iPhone itself, then auto-transferred to your Mac, not a lower-quality webcam stream."
+      }
+    }
+  ]
+}
+</script>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-WYMT6EVL6R"></script>
 <script>
@@ -43,6 +175,7 @@
     </button>
     <nav class="primary-nav" id="primaryNav">
       <a href="#orientation">Vertical &amp; Horizontal</a>
+      <a href="#solutions">Fixes</a>
       <a href="#comparison">Comparison</a>
       <a href="#features">Features</a>
       <a href="#how-it-works">How It Works</a>
@@ -320,6 +453,57 @@
     </div>
   </section>
 
+  <!-- SOLUTIONS / COMMON PROBLEMS -->
+  <section class="features reveal" id="solutions">
+    <div class="wrap">
+      <p class="eyebrow eyebrow--center">Common Problems</p>
+      <h2 class="section-title section-title--center">Searching for a fix? You probably landed here from one of these</h2>
+      <p class="section-sub section-sub--center">If any of this sounds familiar, CamBridge was built for exactly this.</p>
+
+      <div class="feature-grid">
+
+        <article class="feature-card">
+          <h3>Continuity Camera forces my vertical video into landscape 16:9</h3>
+          <p>Apple's Continuity Camera auto-rotates, stabilizes, and crops vertical footage into a horizontal frame — great for webcam calls, useless for TikTok and Reels. CamBridge streams the true portrait frame straight from the iPhone. Nothing gets rotated or cropped.</p>
+        </article>
+
+        <article class="feature-card">
+          <h3>QuickTime only shows my iPhone camera in landscape</h3>
+          <p>Since Sonoma, using your iPhone as a camera source in QuickTime on macOS locks the preview to landscape, no matter how you're holding the phone. CamBridge is a native Mac monitor that follows your iPhone's actual orientation — vertical stays vertical.</p>
+        </article>
+
+        <article class="feature-card">
+          <h3>How do I take photos with my iPhone from my Mac?</h3>
+          <p>See what the iPhone's camera sees, full-size, on your Mac. Tap the preview to pull focus, click a button to fire the shutter — true tethered shooting from your desk, no walking over to the phone.</p>
+        </article>
+
+        <article class="feature-card">
+          <h3>iPhone Mirroring won't open the Camera app</h3>
+          <p>iPhone Mirroring is built for everyday apps, not live camera control — the Camera app simply isn't supported. CamBridge is built exactly for this gap: full remote camera control from your Mac, with a real live feed.</p>
+        </article>
+
+        <article class="feature-card">
+          <h3>Camo, EpocCam, or Blackmagic Camera didn't solve it</h3>
+          <p>Camo and EpocCam turn your iPhone into a webcam feed — EpocCam's remote can only snap pictures, not record video, and neither gives you real remote control. Blackmagic Camera's remote is iPhone-to-iPhone or iPad, not Mac. Screen Mirroring just takes over your whole display. CamBridge gives you real Mac-side remote control and real 4K files, recorded on the iPhone itself.</p>
+        </article>
+
+        <article class="feature-card">
+          <h3>Remote control my iPhone camera from my MacBook to record myself</h3>
+          <p>Put your iPhone on a tripod or a tall stand, walk back to your desk, and drive the whole shot from your MacBook — framing, focus, zoom, exposure, and the shutter, all without touching the phone again.</p>
+        </article>
+
+      </div>
+
+      <div class="repeat-cta">
+        <div class="hero-cta">
+          <a class="btn btn-primary" href="https://testflight.apple.com/join/xmwz6mKR">Join the iPhone beta (TestFlight)</a>
+          <a class="btn btn-secondary" href="https://testflight.apple.com/join/X9Hu9RXx">Join the Mac beta (TestFlight)</a>
+        </div>
+        <p class="hero-cta-note">iPhone: iOS 17 or later &nbsp;·&nbsp; Mac: macOS 14 or later, Apple silicon or Intel</p>
+      </div>
+    </div>
+  </section>
+
   <!-- COMPARISON -->
   <section class="comparison reveal" id="comparison">
     <div class="wrap">
@@ -465,6 +649,18 @@
           <summary>How do I report a bug or give feedback?</summary>
           <p>Email <a href="mailto:mohsin.sapra@gmail.com">mohsin.sapra@gmail.com</a> — real feedback from beta testers directly shapes what gets built next.</p>
         </details>
+        <details class="faq-item">
+          <summary>How can I use my Mac to remotely take photos with my iPhone?</summary>
+          <p>Open CamBridge Camera on your iPhone and CamBridge Studio on your Mac — the live view shows up big on your Mac, you can tap anywhere in the preview to focus, and click the shutter button from your desk to trigger the photo on the iPhone. No accessories, no cables required.</p>
+        </details>
+        <details class="faq-item">
+          <summary>Why does my vertical iPhone video turn horizontal on the Mac (Continuity Camera / QuickTime)?</summary>
+          <p>Apple's Continuity Camera and QuickTime's iPhone camera source are built around a landscape webcam feed — since macOS Sonoma, they auto-rotate, stabilize, and crop vertical footage into 16:9 horizontal. CamBridge is a different kind of app: it's a dedicated Mac monitor and remote control for the iPhone camera, so it streams and shows the true portrait frame with no rotation or cropping.</p>
+        </details>
+        <details class="faq-item">
+          <summary>Is CamBridge a webcam app like Camo or EpocCam?</summary>
+          <p>No. Camo and EpocCam turn your iPhone into a webcam feed for calls and streams. CamBridge is a remote camera and monitor system — the recording you get is the real 4K camera file saved on the iPhone itself, then auto-transferred to your Mac, not a lower-quality webcam stream.</p>
+        </details>
       </div>
 
       <div class="repeat-cta">
@@ -513,6 +709,7 @@
     </div>
     <nav class="footer-links">
       <a href="#top">Overview</a>
+      <a href="#solutions">Fixes</a>
       <a href="#comparison">Comparison</a>
       <a href="#features">Features</a>
       <a href="#how-it-works">How It Works</a>
