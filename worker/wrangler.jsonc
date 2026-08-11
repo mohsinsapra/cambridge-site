@@ -1,0 +1,12 @@
+{
+	"name": "cambridge-signup",
+	"main": "src/index.js",
+	"compatibility_date": "2025-01-01",
+	"d1_databases": [
+		{
+			"binding": "DB",
+			"database_name": "cambridge_signups",
+			"database_id": "edd36ef9-c9bd-4599-b3ba-5ccd798cfb0d"
+		}
+	]
+}

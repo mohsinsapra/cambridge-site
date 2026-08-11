@@ -994,3 +994,124 @@ body {
 .consent-btn { font: inherit; font-size: 0.85rem; padding: 8px 16px; border-radius: 999px; cursor: pointer; border: 1px solid transparent; }
 .consent-btn--accept { background: #E3A855; color: #0C0A08; font-weight: 600; }
 .consent-btn--decline { background: transparent; color: #EDE3D4; border-color: rgba(237,227,212,0.35); }
+
+/* ---- updates / signup form ---- */
+.updates { padding: 90px 0; }
+.updates-inner { max-width: 640px; }
+
+.updates-note {
+  color: var(--ink-dim);
+  font-size: 0.92rem;
+  margin-bottom: 16px;
+}
+
+.signup-form {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+.signup-field {
+  display: flex;
+  flex-direction: column;
+}
+
+.signup-form input[type="email"],
+.signup-form textarea {
+  width: 100%;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  color: var(--ink);
+  border-radius: var(--radius);
+  padding: 13px 16px;
+  font-family: var(--display);
+  font-size: 0.98rem;
+  resize: vertical;
+}
+.signup-form input[type="email"]::placeholder,
+.signup-form textarea::placeholder { color: var(--ink-dim); }
+
+.signup-form textarea { min-height: 64px; }
+
+.pill-group {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+}
+
+.pill-group legend {
+  width: 100%;
+  font-family: var(--mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--ink-dim);
+  margin-bottom: 4px;
+  padding: 0;
+}
+
+.pill {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  padding: 9px 16px;
+  background: var(--surface);
+  font-size: 0.85rem;
+  color: var(--ink-dim);
+  cursor: pointer;
+  transition: border-color var(--ease), background var(--ease), color var(--ease);
+}
+.pill:hover { border-color: var(--accent-2); color: var(--ink); }
+
+.pill input {
+  position: absolute;
+  opacity: 0;
+  width: 1px;
+  height: 1px;
+  margin: 0;
+  pointer-events: none;
+}
+
+.pill:focus-within {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+  border-radius: 999px;
+}
+
+.pill.is-active,
+.pill:has(input:checked) {
+  border-color: var(--accent);
+  background: color-mix(in srgb, var(--accent) 8%, transparent);
+  color: var(--ink);
+}
+
+.hp {
+  position: absolute;
+  left: -9999px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+.signup-status {
+  margin-top: -6px;
+  font-size: 0.88rem;
+  min-height: 1.2em;
+}
+.signup-status--success { color: var(--accent-2); }
+.signup-status--error { color: #D97757; }
+
+.btn:disabled { opacity: 0.6; cursor: not-allowed; }
+
+@media (max-width: 560px) {
+  .signup-form .btn { width: 100%; }
+}

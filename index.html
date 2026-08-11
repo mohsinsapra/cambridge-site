@@ -181,6 +181,7 @@
       <a href="#how-it-works">How It Works</a>
       <a href="#roadmap">What's Next</a>
       <a href="#faq">FAQ</a>
+      <a href="#updates">Updates</a>
     </nav>
   </div>
 </header>
@@ -673,6 +674,73 @@
     </div>
   </section>
 
+  <!-- UPDATES / SIGNUP -->
+  <section id="updates" class="updates reveal">
+    <div class="wrap updates-inner">
+      <p class="eyebrow eyebrow--center">Stay In The Loop</p>
+      <h2 class="section-title section-title--center">Get CamBridge updates</h2>
+      <p class="section-sub section-sub--center">Join the list to hear when the production App Store version launches — or skip the wait and jump into the beta today.</p>
+
+      <form id="signupForm" class="signup-form" novalidate>
+        <div class="signup-field">
+          <label class="sr-only" for="signupEmail">Email</label>
+          <input type="email" id="signupEmail" name="email" required autocomplete="email" placeholder="you@example.com">
+        </div>
+
+        <fieldset class="pill-group">
+          <legend>I'm interested in</legend>
+          <label class="pill">
+            <input type="radio" name="channel" value="beta">
+            <span>Beta releases</span>
+          </label>
+          <label class="pill">
+            <input type="radio" name="channel" value="production">
+            <span>Production launch</span>
+          </label>
+          <label class="pill">
+            <input type="radio" name="channel" value="both" checked>
+            <span>Both</span>
+          </label>
+        </fieldset>
+
+        <fieldset class="pill-group">
+          <legend>I'd use it on</legend>
+          <label class="pill">
+            <input type="radio" name="platform" value="both" checked>
+            <span>iPhone + Mac</span>
+          </label>
+          <label class="pill">
+            <input type="radio" name="platform" value="iphone">
+            <span>iPhone</span>
+          </label>
+          <label class="pill">
+            <input type="radio" name="platform" value="mac">
+            <span>Mac</span>
+          </label>
+        </fieldset>
+
+        <div class="signup-field">
+          <label class="sr-only" for="signupUseCase">What would you use CamBridge for? (optional)</label>
+          <textarea id="signupUseCase" name="use_case" rows="2" maxlength="1000" placeholder="What would you use CamBridge for? (optional)"></textarea>
+        </div>
+
+        <input type="text" name="website" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+
+        <button type="submit" class="btn btn-primary" id="signupSubmit">Join the list</button>
+        <p class="signup-status" id="signupStatus" role="status" aria-live="polite"></p>
+      </form>
+
+      <div class="repeat-cta">
+        <p class="updates-note">Don't want to wait? The beta is open now.</p>
+        <div class="hero-cta">
+          <a class="btn btn-primary" href="https://testflight.apple.com/join/xmwz6mKR">Join the iPhone beta (TestFlight)</a>
+          <a class="btn btn-secondary" href="https://testflight.apple.com/join/X9Hu9RXx">Join the Mac beta (TestFlight)</a>
+        </div>
+        <p class="hero-cta-note">iPhone: iOS 17 or later &nbsp;·&nbsp; Mac: macOS 14 or later, Apple silicon or Intel</p>
+      </div>
+    </div>
+  </section>
+
   <!-- TRUST STRIP -->
   <section class="trust reveal" id="trust">
     <div class="wrap">
@@ -715,6 +783,7 @@
       <a href="#how-it-works">How It Works</a>
       <a href="#roadmap">What's Next</a>
       <a href="#faq">FAQ</a>
+      <a href="#updates">Updates</a>
       <a href="privacy.html">Privacy</a>
     </nav>
     <p class="footer-copy">CamBridge Camera + CamBridge Studio.</p>
@@ -723,5 +792,6 @@
 
 <script src="js/main.js"></script>
 <script src="js/consent.js"></script>
+<script defer src="js/signup.js"></script>
 </body>
 </html>
