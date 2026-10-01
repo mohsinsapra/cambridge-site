@@ -5,6 +5,11 @@ const ALLOWED_ORIGINS = new Set([
 	"http://localhost:8000",
 ]);
 
+const SITEVERIFY_URL = "https://challenges.cloudflare.com/turnstile/v0/siteverify";
+// Hostnames the widget is allowed to be solved on; a token minted elsewhere
+// is rejected even if Cloudflare says it is otherwise valid.
+const ALLOWED_TURNSTILE_HOSTNAMES = new Set(["mohsin.se", "localhost", "127.0.0.1"]);
+
 const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 const VALID_CHANNELS = new Set(["beta", "production", "both"]);
 const VALID_PLATFORMS = new Set(["iphone", "mac", "both"]);
@@ -43,6 +48,31 @@ function validatePayload(data) {
 	return null;
 }
 
+// Server-side Turnstile check. Tokens are single-use, so this is the only
+// place the token is verified -- the browser never calls siteverify itself.
+// Returns true only for a fresh token solved on one of our own hostnames.
+async function verifyTurnstile(token, request, env) {
+	if (typeof token !== "string" || token.length === 0 || token.length > 2048) {
+		return false;
+	}
+	if (!env.TURNSTILE_SECRET_KEY) {
+		// Fail closed: a missing secret must not silently disable protection.
+		return false;
+	}
+	const form = new FormData();
+	form.append("secret", env.TURNSTILE_SECRET_KEY);
+	form.append("response", token);
+	const ip = request.headers.get("CF-Connecting-IP");
+	if (ip) form.append("remoteip", ip);
+	try {
+		const res = await fetch(SITEVERIFY_URL, { method: "POST", body: form });
+		const outcome = await res.json();
+		return outcome.success === true && ALLOWED_TURNSTILE_HOSTNAMES.has(outcome.hostname);
+	} catch {
+		return false;
+	}
+}
+
 async function handlePost(request, env, origin) {
 	let data;
 	try {
@@ -63,6 +93,10 @@ async function handlePost(request, env, origin) {
 	const validationError = validatePayload(data);
 	if (validationError) {
 		return jsonResponse({ ok: false, error: validationError }, 400, origin);
+	}
+
+	if (!(await verifyTurnstile(data.turnstile_token, request, env))) {
+		return jsonResponse({ ok: false, error: "Bot check failed. Please complete the check and try again." }, 403, origin);
 	}
 
 	const email = data.email.trim().toLowerCase();

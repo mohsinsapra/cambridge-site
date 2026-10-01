@@ -726,6 +726,8 @@
 
         <input type="text" name="website" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
 
+        <div class="cf-turnstile" data-sitekey="0x4AAAAAAFLGJZiXsQw1Xaia" data-action="turnstile-spin-v1" data-theme="auto"></div>
+
         <button type="submit" class="btn btn-primary" id="signupSubmit">Join the list</button>
         <p class="signup-status" id="signupStatus" role="status" aria-live="polite"></p>
       </form>
@@ -792,6 +794,7 @@
 
 <script src="js/main.js"></script>
 <script src="js/consent.js"></script>
+<script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
 <script defer src="js/signup.js"></script>
 </body>
 </html>

@@ -36,12 +36,20 @@
       return;
     }
 
+    var turnstileInput = form.querySelector('input[name="cf-turnstile-response"]');
+    var turnstileToken = turnstileInput ? turnstileInput.value : '';
+    if (!turnstileToken) {
+      setStatus('Please wait for the bot check to finish, then try again.', 'error');
+      return;
+    }
+
     var payload = {
       email: email,
       channel: getCheckedValue('channel') || 'both',
       platform: getCheckedValue('platform') || 'both',
       use_case: (useCaseInput && useCaseInput.value || '').trim(),
-      website: (form.querySelector('input[name="website"]') || {}).value || ''
+      website: (form.querySelector('input[name="website"]') || {}).value || '',
+      turnstile_token: turnstileToken
     };
 
     if (submitBtn) {
@@ -76,6 +84,8 @@
         setStatus("Couldn't reach the server — check your connection and try again.", 'error');
       })
       .finally(function () {
+        // Turnstile tokens are single-use: get a fresh one for any retry.
+        if (window.turnstile) window.turnstile.reset();
         if (submitBtn) {
           submitBtn.disabled = false;
           submitBtn.textContent = originalBtnText;
