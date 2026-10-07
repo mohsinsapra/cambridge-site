@@ -14,7 +14,7 @@
 <meta name="theme-color" content="#0C0A08" media="(prefers-color-scheme: dark)">
 <meta name="theme-color" content="#FBF7F0" media="(prefers-color-scheme: light)">
 <script>document.documentElement.classList.add("js")</script>
-<link rel="stylesheet" href="css/style.css?v=5">
+<link rel="stylesheet" href="css/style.css?v=6">
 
 <!-- Open Graph -->
 <meta property="og:title" content="CamBridge — Remote control your iPhone camera from your Mac">
@@ -44,7 +44,7 @@
     "priceCurrency": "USD"
   },
   "url": "https://mohsin.se/cambridge-site/",
-  "releaseNotes": "October 2026: press-and-hold AE/AF lock with exposure swipe, Cinematic mode (iOS 26, iPhone 13 or newer), photos transferred to the Mac, redesigned camera screen and Studio controls, and reliability fixes for calls, StandBy and full screen.",
+  "releaseNotes": "October 2026: press-and-hold AE/AF lock with exposure swipe, photos transferred to the Mac, Mac podcast/USB mic recorded in sync with iPhone video, redesigned camera screen and Studio controls, and reliability fixes for calls, StandBy and full screen.",
   "description": "CamBridge turns your iPhone into a remote-controlled camera and live monitor for your Mac. See your framing big, shoot true vertical or horizontal video without cropping, tap to focus, and record real 4K on-device — footage auto-transfers to your Mac."
 }
 </script>
@@ -333,7 +333,7 @@
             <span class="ph-top"><span class="rec-pill"><i class="rec-dot"></i>REC 00:12</span></span>
             <span class="ret ret--phone"><span class="ret-sun"><svg><use href="#i-sun"/></svg></span></span>
             <span class="lens lens--ph"><b>0.5×</b><b class="on">1×</b><b>3×</b></span>
-            <span class="modes"><b>CINEMATIC</b><b class="on">VIDEO</b><b>PHOTO</b></span>
+            <span class="modes"><b class="on">VIDEO</b><b>PHOTO</b></span>
             <span class="shutter"><i></i></span>
           </div>
         </div>
@@ -466,28 +466,8 @@
         </div></div>
       </article>
 
-      <!-- 3. Cinematic -->
+      <!-- 3. Mic -->
       <article class="show">
-        <div class="show-copy">
-          <h3>Cinematic mode, with the aperture on your Mac.</h3>
-          <p>Switch between CINEMATIC, VIDEO and PHOTO. Get background blur with subject-tracking focus, set the aperture (ƒ) from your Mac, and keep editing the depth afterwards in Photos or Final Cut.</p>
-          <ul class="ticks">
-            <li>Needs iOS 26 and an iPhone 13 or newer</li>
-            <li>Up to 30 fps in Cinematic</li>
-            <li>Depth stays editable after you shoot</li>
-          </ul>
-        </div>
-        <div class="vis"><div class="vig vig--cine" role="img" aria-label="Cinematic mode: a sharp subject over a blurred background, an f 2.8 aperture readout and a CINEMATIC, VIDEO, PHOTO switcher.">
-          <svg class="fill bgblur"><use href="#scene-bg-w"/></svg>
-          <svg class="fill"><use href="#scene-subj-w"/></svg>
-          <span class="trackbox"><i></i><i></i><i></i><i></i></span>
-          <span class="fstop"><svg><use href="#i-sun"/></svg>ƒ2.8<span class="fslider"><i></i></span></span>
-          <span class="modes modes--big"><b class="on">CINEMATIC</b><b>VIDEO</b><b>PHOTO</b></span>
-        </div></div>
-      </article>
-
-      <!-- 4. Mic -->
-      <article class="show show--flip">
         <div class="show-copy">
           <h3>Bring your own mic.</h3>
           <p>Pick any mic your iPhone can see, including the DJI Mic directly over Bluetooth with no receiver needed, or through its receiver for full quality. USB, wired, and Bluetooth headsets work too. Switch from your phone or your Mac, with a live level meter.</p>
@@ -556,7 +536,7 @@
     <div class="wrap">
       <div class="section-head">
         <p class="kicker">What's new &nbsp;·&nbsp; October 2026</p>
-        <h2 id="whats-new-title">Lock focus, shoot Cinematic, and get your photos on the Mac.</h2>
+        <h2 id="whats-new-title">Lock focus, record your Mac mic, and get your photos on the Mac.</h2>
         <p class="lead">The next TestFlight update for CamBridge Camera on iPhone and CamBridge Studio on Mac. Here is what changes.</p>
       </div>
 
@@ -567,9 +547,9 @@
           <p>Press and hold the iPhone preview, or click and hold on the Mac, to lock focus and exposure like the native Camera app. Swipe up or down to brighten or darken. After a tap, focus goes back to auto when the scene changes.</p>
         </article>
         <article class="new-card new-card--b">
-          <svg class="new-ico" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="4"/><path d="M12 3v5M20.2 8.5l-4.3 2.5M20.2 15.5 16 13M12 21v-5M3.8 15.5 8 13M3.8 8.5 8 11"/></svg>
-          <h3>Cinematic mode</h3>
-          <p>Switch between CINEMATIC, VIDEO and PHOTO. Get background blur with subject-tracking focus, set the aperture (ƒ) from your Mac, and keep editing the depth afterwards in Photos or Final Cut. Needs iOS 26 and an iPhone 13 or newer. Up to 30 fps.</p>
+          <svg class="new-ico" viewBox="0 0 24 24" aria-hidden="true"><rect x="9" y="3" width="6" height="11" rx="3"/><path d="M5.5 11.5a6.5 6.5 0 0 0 13 0M12 18v3M8.5 21h7"/></svg>
+          <h3>Record your Mac's mic</h3>
+          <p>Record your Mac's podcast or USB mic in sync with the iPhone video. The audio is merged into the video for you on the Mac. Included in the next TestFlight update.</p>
         </article>
         <article class="new-card new-card--c">
           <svg class="new-ico" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4.5" width="18" height="15" rx="2.5"/><circle cx="9" cy="10" r="1.8"/><path d="m4 17 5-4.5 3.5 3L15.5 12 20 16.5"/></svg>
@@ -588,7 +568,6 @@
         </article>
       </div>
 
-      <p class="today-note"><span class="tag tag--next">Coming next</span> Record your Mac's podcast or USB mic in sync with the iPhone video. The audio is merged into the video for you on the Mac.</p>
     </div>
   </section>
 
@@ -749,8 +728,8 @@
       </div>
       <ul class="roadmap-list">
         <li class="road-item road-item--next">
-          <span class="roadmap-tag">Coming next</span>
-          <span class="roadmap-text">Record your Mac's podcast or USB mic in sync with the iPhone video, merged into the footage for you</span>
+          <span class="roadmap-tag">Next update</span>
+          <span class="roadmap-text">Record your Mac's podcast or USB mic in sync with the iPhone video, merged into the footage for you (in the next TestFlight update)</span>
         </li>
         <li class="road-item">
           <span class="roadmap-tag">Soon</span>
