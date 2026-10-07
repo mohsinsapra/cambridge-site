@@ -38,6 +38,10 @@
     --accent: #C9821F;
     --accent-2: #3F7A72;
     --accent-text: #85500F;
+    /* Light mode: white text on a slightly deeper amber for readable CTAs. */
+    --on-accent: #FFFFFF;
+    --accent-btn: #B46E16;
+    --live: #1F9D45;
     --surface-2: #F4EDE1;
     --line: color-mix(in srgb, var(--ink) 13%, transparent);
     --line-strong: color-mix(in srgb, var(--ink) 24%, transparent);
@@ -97,7 +101,7 @@ p a, .lead a { color: var(--accent-2); text-decoration: underline; text-underlin
 .primary-nav { display: flex; align-items: center; gap: 1.5rem; font-size: .92rem; font-weight: 500; }
 .primary-nav a { color: var(--ink-dim); transition: color .2s; }
 .primary-nav a:hover { color: var(--ink); }
-.primary-nav .nav-cta { color: var(--on-accent); background: var(--accent); padding: .5rem 1.1rem; border-radius: 99px; font-weight: 700; }
+.primary-nav .nav-cta { color: var(--on-accent); background: var(--accent-btn, var(--accent)); padding: .5rem 1.1rem; border-radius: 99px; font-weight: 700; }
 .primary-nav .nav-cta:hover { color: var(--on-accent); filter: brightness(1.08); }
 .nav-toggle { display: none; width: 44px; height: 44px; border-radius: 12px; flex-direction: column; align-items: center; justify-content: center; gap: 5px; }
 .nav-toggle-bar { width: 20px; height: 2px; background: var(--ink); border-radius: 2px; transition: transform .2s, opacity .2s; }
@@ -122,7 +126,7 @@ p a, .lead a { color: var(--accent-2); text-decoration: underline; text-underlin
 .cta-row--center { justify-content: center; }
 .btn { display: inline-flex; align-items: center; justify-content: center; gap: .6rem; min-height: 52px; padding: .7rem 1.6rem; border-radius: 99px; font-weight: 700; font-size: 1rem; letter-spacing: -0.01em; line-height: 1.2; text-align: center; border: 1px solid transparent; transition: transform .2s, filter .2s, background .2s; cursor: pointer; }
 .btn:hover { transform: translateY(-1px); }
-.btn-primary { background: var(--accent); color: var(--on-accent); box-shadow: 0 10px 30px -10px color-mix(in srgb, var(--accent) 70%, transparent); }
+.btn-primary { background: var(--accent-btn, var(--accent)); color: var(--on-accent); box-shadow: 0 10px 30px -10px color-mix(in srgb, var(--accent) 70%, transparent); }
 .btn-primary:hover { filter: brightness(1.08); }
 .btn-secondary { background: var(--surface-2); color: var(--ink); border-color: var(--line-strong); }
 .btn-secondary:hover { border-color: var(--accent-2); }
@@ -137,6 +141,7 @@ p a, .lead a { color: var(--accent-2); text-decoration: underline; text-underlin
 .hero::before { content: ""; position: absolute; inset: -20% 0 auto; height: 90%; background: radial-gradient(50% 55% at 50% 30%, var(--glow), transparent 70%); pointer-events: none; }
 .hero-copy { position: relative; text-align: center; display: flex; flex-direction: column; align-items: center; }
 .beta-chip { display: inline-flex; align-items: center; gap: .6rem; padding: .4rem 1rem; border: 1px solid var(--line-strong); border-radius: 99px; font-size: .9rem; font-weight: 600; color: var(--ink-dim); margin-bottom: 1.5rem; background: color-mix(in srgb, var(--surface) 70%, transparent); }
+.beta-chip .rec-dot { background: var(--live, #34C759); box-shadow: 0 0 0 3px color-mix(in srgb, var(--live, #34C759) 22%, transparent); }
 .rec-dot { display: inline-block; width: .7em; height: .7em; border-radius: 50%; background: var(--ui-red); flex: none; animation: pulse 1.8s ease-in-out infinite; }
 .hero-title { font-size: clamp(2.3rem, 5.4vw, 4rem); letter-spacing: -0.045em; line-height: 1.02; max-width: 19ch; margin-bottom: 1.25rem; }
 .hero-pitch { font-size: clamp(1.1rem, 2vw, 1.4rem); color: var(--ink-dim); max-width: 36em; line-height: 1.5; margin-bottom: 1.6rem; }
