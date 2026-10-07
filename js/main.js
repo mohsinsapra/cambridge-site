@@ -4,37 +4,32 @@
   var nav = document.getElementById('primaryNav');
   if (!toggle || !nav) return;
 
-  toggle.addEventListener('click', function () {
-    var isOpen = nav.classList.toggle('is-open');
-    toggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
-  });
-
+  function setOpen(open) {
+    nav.classList.toggle('is-open', open);
+    toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+  }
+  toggle.addEventListener('click', function () { setOpen(!nav.classList.contains('is-open')); });
   nav.querySelectorAll('a').forEach(function (link) {
-    link.addEventListener('click', function () {
-      nav.classList.remove('is-open');
-      toggle.setAttribute('aria-expanded', 'false');
-    });
+    link.addEventListener('click', function () { setOpen(false); });
+  });
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape' && nav.classList.contains('is-open')) { setOpen(false); toggle.focus(); }
   });
 })();
 
-// Scroll-reveal: fade/slide .reveal sections into view once, respecting
-// prefers-reduced-motion (handled in CSS by neutralizing .reveal there too).
+// Ambient motion in the product mockups only runs while they are on screen.
+// Nothing is hidden before this runs: without JS the page is fully visible.
 (function () {
-  var reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-  var targets = document.querySelectorAll('.reveal');
-  if (!targets.length || reduceMotion || !('IntersectionObserver' in window)) {
-    targets.forEach(function (el) { el.classList.add('is-visible'); });
+  var targets = document.querySelectorAll('.stage, .vis');
+  if (!targets.length) return;
+  if (!('IntersectionObserver' in window)) {
+    targets.forEach(function (el) { el.classList.add('in-view'); });
     return;
   }
-
-  var observer = new IntersectionObserver(function (entries) {
+  var io = new IntersectionObserver(function (entries) {
     entries.forEach(function (entry) {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('is-visible');
-        observer.unobserve(entry.target);
-      }
+      entry.target.classList.toggle('in-view', entry.isIntersecting);
     });
-  }, { threshold: 0.15 });
-
-  targets.forEach(function (el) { observer.observe(el); });
+  }, { rootMargin: '80px' });
+  targets.forEach(function (el) { io.observe(el); });
 })();

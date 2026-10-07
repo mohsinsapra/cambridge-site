@@ -87,6 +87,17 @@ Comparison reflects our understanding as of August 2026 — check each product f
 
 CamBridge Camera and CamBridge Studio talk to each other directly over your local Wi‑Fi network. There's no sign‑up, no server in the middle, and nothing about your shoot leaves your network. Built in Swift, kept simple on purpose — what happens in your room stays between your iPhone and your Mac. Full privacy page: https://mohsin.se/cambridge-site/privacy.html
 
+## What's new (October 2026)
+
+The next TestFlight update for CamBridge Camera (iPhone) and CamBridge Studio (Mac):
+
+- **Lock focus and exposure, then swipe to adjust**: press and hold the iPhone preview, or click and hold on the Mac, to lock focus and exposure like the native Camera app. Swipe up or down to brighten or darken. After a tap, focus returns to auto when the scene changes.
+- **Cinematic mode**: CINEMATIC, VIDEO and PHOTO modes with background blur and subject-tracking focus. Aperture (ƒ) is adjustable from the Mac, and depth stays editable afterwards in Photos or Final Cut. Requires iOS 26 and an iPhone 13 or newer. Up to 30 fps.
+- **Photos land on the Mac too**: photos, including ones triggered from the Mac, arrive in the Mac's Footage folder like videos.
+- **Redesigned camera screen and Studio controls**: native Camera look, readable over bright scenes, compact floating controls on the Mac, and a cleaner full screen with grid and level.
+- **Fewer interruptions**: a WhatsApp or phone call that takes the mic no longer causes a camera error (CamBridge keeps filming video only and recovers after the call). The iPhone no longer falls into the StandBy clock while CamBridge is open. Full screen on the Mac exits cleanly with Esc, even after a disconnect. Lens order is 0.5× · 1× · 3×.
+- **Coming next**: record your Mac's podcast or USB mic in sync with the iPhone video, auto-merged on the Mac.
+
 ## What's next in the beta (roadmap)
 
 In active development — not yet shipped, no promised dates. Everything here is honestly labeled Coming Soon until it ships.
