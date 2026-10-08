@@ -90,22 +90,17 @@ CamBridge Camera and CamBridge Studio talk to each other directly over your loca
 
 ## What's new (October 2026)
 
-New in TestFlight 1.2.1 for CamBridge Camera (iPhone) and CamBridge Studio (Mac):
+New in TestFlight 1.2.2 for CamBridge Camera (iPhone) and CamBridge Studio (Mac):
 
-- **Lock focus and exposure, then swipe to adjust**: press and hold the iPhone preview, or click and hold on the Mac, to lock focus and exposure like the native Camera app. Swipe up or down to brighten or darken. After a tap, focus returns to auto when the scene changes.
-- **Photos land on the Mac too**: photos, including ones triggered from the Mac, arrive in the Mac's Footage folder like videos.
-- **Redesigned camera screen and Studio controls**: native Camera look, readable over bright scenes, compact floating controls on the Mac, and a cleaner full screen with grid and level.
-- **Fewer interruptions**: a WhatsApp or phone call that takes the mic no longer causes a camera error (CamBridge keeps filming video only and recovers after the call). The iPhone no longer falls into the StandBy clock while CamBridge is open. Full screen on the Mac exits cleanly with Esc, even after a disconnect. Lens order is 0.5× · 1× · 3×.
-- **Record your Mac's mic**: pick a USB or podcast mic in Studio and every iPhone recording also records it on the Mac, giving you a "<clip> (Mac mic).mov" with the untouched iPhone video plus your Mac mic audio, synced automatically by audio.
+- **One Microphone list in Studio**: pick an iPhone mic or a mic plugged into your Mac. Choose a Mac mic and you get one finished video with that mic's sound, already in sync. No extra audio files to line up, and the leftovers go to the Trash. The sound stays exactly as your mic recorded it, with no automatic volume changes.
+- **Your footage stays private**: footage only goes to Macs you approve. The iPhone asks once for each Mac and checks that it is really your Mac.
+- **PHOTO mode**: 12 MP (default) or 48 MP photos, changeable on the iPhone or from the Mac.
+- **Smooth lens switching**: 0.5× · 1× · 3× glides from one lens to the next, and the camera starts more smoothly.
+- **New look**: a new logo and new colours, with a short logo animation when the iPhone app opens.
 
 ## Shipped, and what's next (roadmap)
 
 Roadmap items are labeled honestly until they ship, with no promised dates.
-
-Next:
-
-- Photo resolution setting — native-style 4:3 photos at 12 MP or 48 MP (48 MP on the 1× lens).
-- Smoother camera start-up.
 
 Shipped (in the TestFlight beta today):
 
@@ -113,7 +108,9 @@ Shipped (in the TestFlight beta today):
 - Director mode — a second iPhone running CamBridge Camera acts as the director's monitor and remote (discover cameras on the network or connect by IP; the camera phone can require approval).
 - USB cable link — plug the iPhone into the Mac and Studio detects it automatically; link menu: Auto / Cable only / Wi‑Fi only.
 - HEVC streaming — hardware-encoded monitor stream with JPEG fallback and adaptive bitrate. Recording is always the real on-device 4K file.
-- Mac mic recording (1.2.1) — a "(Mac mic)" clip with the untouched iPhone video plus your Mac mic audio, synced automatically.
+- One Microphone list (1.2.2) — pick an iPhone mic or a Mac mic; a Mac mic gives one finished video with that mic's sound, already in sync.
+- Mac mic recording (1.2.1), simplified in 1.2.2 as above.
+- PHOTO mode, smooth lens switching, private-by-default footage and a new look (1.2.2) — see "What's new".
 
 ## FAQ — straight answers, no marketing spin
 
