@@ -14,7 +14,7 @@
 <meta name="theme-color" content="#0C0A08" media="(prefers-color-scheme: dark)">
 <meta name="theme-color" content="#FBF7F0" media="(prefers-color-scheme: light)">
 <script>document.documentElement.classList.add("js")</script>
-<link rel="stylesheet" href="css/style.css?v=6">
+<link rel="stylesheet" href="css/style.css?v=7">
 
 <!-- Open Graph -->
 <meta property="og:title" content="CamBridge — Remote control your iPhone camera from your Mac">
@@ -44,7 +44,8 @@
     "priceCurrency": "USD"
   },
   "url": "https://mohsin.se/cambridge-site/",
-  "releaseNotes": "October 2026: press-and-hold AE/AF lock with exposure swipe, photos transferred to the Mac, Mac podcast/USB mic recorded in sync with iPhone video, redesigned camera screen and Studio controls, and reliability fixes for calls, StandBy and full screen.",
+  "softwareVersion": "1.2.1",
+  "releaseNotes": "TestFlight 1.2.1, October 2026: press-and-hold AE/AF lock with exposure swipe, photos transferred to the Mac, Mac podcast/USB mic recorded in sync with iPhone video (\"(Mac mic)\" clip), redesigned camera screen and Studio controls, and reliability fixes for calls, StandBy and full screen.",
   "description": "CamBridge turns your iPhone into a remote-controlled camera and live monitor for your Mac. See your framing big, shoot true vertical or horizontal video without cropping, tap to focus, and record real 4K on-device — footage auto-transfers to your Mac."
 }
 </script>
@@ -60,7 +61,7 @@
       "name": "Do I need Wi‑Fi, or can I use a cable?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Right now CamBridge needs your iPhone and Mac on the same Wi‑Fi network. USB cable streaming is on the roadmap for when Wi‑Fi isn't an option."
+        "text": "Either. CamBridge works over the same Wi‑Fi network or over a USB cable. Plug the iPhone into the Mac and Studio detects the cable automatically, and the link menu lets you choose Auto, Cable only or Wi‑Fi only. Recording is always the real 4K file on the iPhone, so the link only carries the live monitor."
       }
     },
     {
@@ -92,7 +93,7 @@
       "name": "Does anything leave my network?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "No. CamBridge has no accounts, no sign-up, and no cloud server in the middle — your iPhone and Mac talk directly over your local Wi‑Fi. See our privacy page for details."
+        "text": "No. CamBridge has no accounts, no sign-up, and no cloud server in the middle — your iPhone and Mac talk directly over your local Wi‑Fi or a USB cable. See our privacy page for details."
       }
     },
     {
@@ -113,6 +114,14 @@
     },
     {
       "@type": "Question",
+      "name": "Can I use more than one iPhone?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. CamBridge Studio can connect to several iPhones at once and show them in a grid. Click a tile to open its program view, with per-phone controls and recording. Recordings land in Footage/ in a folder named after each phone. A second iPhone running CamBridge Camera can also act as the director's monitor and remote: it discovers cameras on the network or connects by IP, and the camera phone can require approval."
+      }
+    },
+    {
+      "@type": "Question",
       "name": "How do I report a bug or give feedback?",
       "acceptedAnswer": {
         "@type": "Answer",
@@ -124,7 +133,7 @@
       "name": "How can I use my Mac to remotely take photos with my iPhone?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Open CamBridge Camera on your iPhone and CamBridge Studio on your Mac — the live view shows up big on your Mac, you can tap anywhere in the preview to focus, and click the shutter button from your desk to trigger the photo on the iPhone. No accessories, no cables required."
+        "text": "Open CamBridge Camera on your iPhone and CamBridge Studio on your Mac — the live view shows up big on your Mac, you can tap anywhere in the preview to focus, and click the shutter button from your desk to trigger the photo on the iPhone. No accessories required, and a cable is optional."
       }
     },
     {
@@ -397,7 +406,7 @@
         <li class="step">
           <span class="step-num" aria-hidden="true">2</span>
           <h3>Open CamBridge on your Mac</h3>
-          <p>Open the Mac app on the same Wi‑Fi and your iPhone shows up automatically. No pairing codes.</p>
+          <p>Open the Mac app on the same Wi‑Fi, or plug in a USB cable, and your iPhone shows up automatically. No pairing codes.</p>
         </li>
         <li class="step">
           <span class="step-num" aria-hidden="true">3</span>
@@ -523,7 +532,7 @@
         <article class="mini">
           <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3 4.5 6v5.5c0 4.6 3.1 8.2 7.5 9.5 4.4-1.3 7.5-4.9 7.5-9.5V6L12 3z"/><path d="m8.5 12 2.5 2.5 4.5-5"/></svg>
           <h4>No accounts, nothing in the cloud</h4>
-          <p>Your iPhone and Mac talk directly over your local Wi‑Fi. There is no server in the middle.</p>
+          <p>Your iPhone and Mac talk directly over your local Wi‑Fi or a USB cable. There is no server in the middle.</p>
         </article>
       </div>
 
@@ -537,7 +546,7 @@
       <div class="section-head">
         <p class="kicker">What's new &nbsp;·&nbsp; October 2026</p>
         <h2 id="whats-new-title">Lock focus, record your Mac mic, and get your photos on the Mac.</h2>
-        <p class="lead">The next TestFlight update for CamBridge Camera on iPhone and CamBridge Studio on Mac. Here is what changes.</p>
+        <p class="lead">New in TestFlight 1.2.1 for CamBridge Camera on iPhone and CamBridge Studio on Mac. Here is what changed.</p>
       </div>
 
       <div class="new-grid">
@@ -549,7 +558,7 @@
         <article class="new-card new-card--b">
           <svg class="new-ico" viewBox="0 0 24 24" aria-hidden="true"><rect x="9" y="3" width="6" height="11" rx="3"/><path d="M5.5 11.5a6.5 6.5 0 0 0 13 0M12 18v3M8.5 21h7"/></svg>
           <h3>Record your Mac's mic</h3>
-          <p>Record your Mac's podcast or USB mic in sync with the iPhone video. The audio is merged into the video for you on the Mac. Included in the next TestFlight update.</p>
+          <p>Pick a USB or podcast mic in Studio and every iPhone recording also records it on the Mac. You get an extra clip, named "(Mac mic)", with the untouched iPhone video plus your Mac mic audio, synced automatically by audio. New in 1.2.1.</p>
         </article>
         <article class="new-card new-card--c">
           <svg class="new-ico" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4.5" width="18" height="15" rx="2.5"/><circle cx="9" cy="10" r="1.8"/><path d="m4 17 5-4.5 3.5 3L15.5 12 20 16.5"/></svg>
@@ -687,7 +696,13 @@
             </tr>
             <tr>
               <th scope="row">Use a second iPhone as director's monitor</th>
-              <td class="comparison-table-us">Coming soon</td>
+              <td class="comparison-table-us">Yes</td>
+              <td>&mdash;</td>
+              <td>&mdash;</td>
+            </tr>
+            <tr>
+              <th scope="row">Record a Mac-attached mic in sync</th>
+              <td class="comparison-table-us">Yes</td>
               <td>&mdash;</td>
               <td>&mdash;</td>
             </tr>
@@ -700,7 +715,7 @@
           </tbody>
         </table>
       </div>
-      <p class="comparison-footnote">Comparison reflects our understanding as of August 2026. Check each product for current details.</p>
+      <p class="comparison-footnote">Comparison reflects our understanding as of October 2026. Check each product for current details.</p>
     </div>
   </section>
 
@@ -714,7 +729,7 @@
       </svg>
       <div>
         <h2 id="priv-title">No accounts. Nothing leaves your room.</h2>
-        <p class="lead">CamBridge Camera and CamBridge Studio talk to each other directly over your local Wi‑Fi network. There's no sign‑up, no server in the middle, and nothing about your shoot leaves your network. Built in Swift, kept simple on purpose. What happens in your room stays between your iPhone and your Mac. <a href="privacy.html">Read the privacy policy</a>.</p>
+        <p class="lead">CamBridge Camera and CamBridge Studio talk to each other directly over your local Wi‑Fi network or a USB cable. There's no sign‑up, no server in the middle, and nothing about your shoot leaves your network. Built in Swift, kept simple on purpose. What happens in your room stays between your iPhone and your Mac. <a href="privacy.html">Read the privacy policy</a>.</p>
       </div>
     </div>
   </section>
@@ -723,29 +738,41 @@
   <section class="section roadmap" id="roadmap" aria-labelledby="road-title">
     <div class="wrap">
       <div class="section-head">
-        <h2 id="road-title">What's next in the beta.</h2>
-        <p class="lead">In active development, not yet shipped, no promised dates. Everything here is honestly labeled until it ships.</p>
+        <h2 id="road-title">Shipped, and what's next.</h2>
+        <p class="lead">Roadmap items are labeled honestly until they ship, with no promised dates. Everything under Shipped is in the TestFlight beta today.</p>
       </div>
+      <h3 class="road-sub">Next</h3>
       <ul class="roadmap-list">
         <li class="road-item road-item--next">
-          <span class="roadmap-tag">Next update</span>
-          <span class="roadmap-text">Record your Mac's podcast or USB mic in sync with the iPhone video, merged into the footage for you (in the next TestFlight update)</span>
+          <span class="roadmap-tag">Next</span>
+          <span class="roadmap-text">Photo resolution setting: native-style 4:3 photos at 12 MP or 48 MP (48 MP on the 1× lens)</span>
         </li>
-        <li class="road-item">
-          <span class="roadmap-tag">Soon</span>
-          <span class="roadmap-text">Multi-phone grid: monitor and switch between several iPhones at once</span>
+        <li class="road-item road-item--next">
+          <span class="roadmap-tag">Next</span>
+          <span class="roadmap-text">Smoother camera start-up</span>
         </li>
-        <li class="road-item">
-          <span class="roadmap-tag">Soon</span>
-          <span class="roadmap-text">Use a second iPhone as the director's monitor and remote</span>
+      </ul>
+      <h3 class="road-sub">Shipped</h3>
+      <ul class="roadmap-list">
+        <li class="road-item road-item--shipped">
+          <span class="roadmap-tag">Shipped</span>
+          <span class="roadmap-text">Multi-phone grid: Studio connects to several iPhones at once, click a tile for its program view, with per-phone controls and recording into Footage/&lt;phone name&gt;/</span>
         </li>
-        <li class="road-item">
-          <span class="roadmap-tag">Soon</span>
-          <span class="roadmap-text">USB cable streaming, for when Wi‑Fi isn't an option</span>
+        <li class="road-item road-item--shipped">
+          <span class="roadmap-tag">Shipped</span>
+          <span class="roadmap-text">Director mode: a second iPhone running CamBridge Camera acts as the director's monitor and remote (discover cameras on the network or connect by IP; the camera phone can require approval)</span>
         </li>
-        <li class="road-item">
-          <span class="roadmap-tag">Soon</span>
-          <span class="roadmap-text">HEVC streaming for a sharper preview at lower bandwidth. Recording itself never depends on the network: it's real 4K, on-device, today.</span>
+        <li class="road-item road-item--shipped">
+          <span class="roadmap-tag">Shipped</span>
+          <span class="roadmap-text">USB cable link: plug the iPhone into the Mac and Studio detects it automatically. Link menu: Auto, Cable only or Wi‑Fi only.</span>
+        </li>
+        <li class="road-item road-item--shipped">
+          <span class="roadmap-tag">Shipped</span>
+          <span class="roadmap-text">HEVC streaming: a hardware-encoded monitor stream with JPEG fallback and adaptive bitrate. Recording is always the real on-device 4K file.</span>
+        </li>
+        <li class="road-item road-item--shipped">
+          <span class="roadmap-tag">Shipped</span>
+          <span class="roadmap-text">Mac mic recording (1.2.1): a "(Mac mic)" clip with the untouched iPhone video plus your Mac mic audio, synced automatically</span>
         </li>
       </ul>
     </div>
@@ -761,7 +788,7 @@
       <div class="faq-list">
         <details class="faq-item">
           <summary>Do I need Wi‑Fi, or can I use a cable?</summary>
-          <p>Right now CamBridge needs your iPhone and Mac on the same Wi‑Fi network. USB cable streaming is <a href="#roadmap">on the roadmap</a> for when Wi‑Fi isn't an option.</p>
+          <p>Either. CamBridge works over the same Wi‑Fi network or over a USB cable. Plug the iPhone into the Mac and Studio detects the cable automatically, and the link menu lets you choose Auto, Cable only or Wi‑Fi only. Recording is always the real 4K file on the iPhone, so the link only carries the live monitor.</p>
         </details>
         <details class="faq-item">
           <summary>Is this a finished app?</summary>
@@ -777,7 +804,7 @@
         </details>
         <details class="faq-item">
           <summary>Does anything leave my network?</summary>
-          <p>No. CamBridge has no accounts, no sign-up, and no cloud server in the middle — your iPhone and Mac talk directly over your local Wi‑Fi. See our <a href="privacy.html">privacy page</a> for details.</p>
+          <p>No. CamBridge has no accounts, no sign-up, and no cloud server in the middle — your iPhone and Mac talk directly over your local Wi‑Fi or a USB cable. See our <a href="privacy.html">privacy page</a> for details.</p>
         </details>
         <details class="faq-item">
           <summary>What devices does this need?</summary>
@@ -788,12 +815,16 @@
           <p>It's free during the beta. We don't have final pricing figured out yet — when that changes we'll be upfront about it, and people testing it now will be treated well. No specific promises beyond that.</p>
         </details>
         <details class="faq-item">
+          <summary>Can I use more than one iPhone?</summary>
+          <p>Yes. CamBridge Studio can connect to several iPhones at once and show them in a grid. Click a tile to open its program view, with per-phone controls and recording. Recordings land in Footage/ in a folder named after each phone. A second iPhone running CamBridge Camera can also act as the director's monitor and remote: it discovers cameras on the network or connects by IP, and the camera phone can require approval.</p>
+        </details>
+        <details class="faq-item">
           <summary>How do I report a bug or give feedback?</summary>
           <p>Email <a href="mailto:mohsin.sapra@gmail.com">mohsin.sapra@gmail.com</a> — real feedback from beta testers directly shapes what gets built next.</p>
         </details>
         <details class="faq-item">
           <summary>How can I use my Mac to remotely take photos with my iPhone?</summary>
-          <p>Open CamBridge Camera on your iPhone and CamBridge Studio on your Mac — the live view shows up big on your Mac, you can tap anywhere in the preview to focus, and click the shutter button from your desk to trigger the photo on the iPhone. No accessories, no cables required.</p>
+          <p>Open CamBridge Camera on your iPhone and CamBridge Studio on your Mac — the live view shows up big on your Mac, you can tap anywhere in the preview to focus, and click the shutter button from your desk to trigger the photo on the iPhone. No accessories required, and a cable is optional.</p>
         </details>
         <details class="faq-item">
           <summary>Why does my vertical iPhone video turn horizontal on the Mac (Continuity Camera / QuickTime)?</summary>
@@ -811,7 +842,7 @@
   <section class="section get-beta" id="get-beta" aria-labelledby="get-title">
     <div class="wrap"><div class="get-inner">
       <h2 id="get-title">Try it on your own desk.</h2>
-      <p class="lead">Free while it's in beta. Install the iPhone app and the Mac app, open both on the same Wi‑Fi, and you're shooting.</p>
+      <p class="lead">Free while it's in beta. Install the iPhone app and the Mac app, open both on the same Wi‑Fi (or connect a cable), and you're shooting.</p>
       <div class="cta-row cta-row--center">
         <a class="btn btn-primary" href="https://testflight.apple.com/join/xmwz6mKR"><svg class="btn-ico" aria-hidden="true"><use href="#i-phone"/></svg>Join the iPhone beta</a>
         <a class="btn btn-secondary" href="https://testflight.apple.com/join/X9Hu9RXx"><svg class="btn-ico" aria-hidden="true"><use href="#i-mac"/></svg>Join the Mac beta</a>

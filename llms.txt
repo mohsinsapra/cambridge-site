@@ -2,7 +2,7 @@
 
 > CamBridge turns your iPhone into a remote-controlled camera and live monitor for your Mac — real vertical or horizontal video, tap-to-focus, and true 4K recording, with no accounts and nothing leaving your local network.
 
-CamBridge is two free TestFlight beta apps built by a solo creator (Alpha Tjänster AB, Sweden): **CamBridge Camera** for iPhone (iOS 17+) and **CamBridge Studio** for Mac (macOS 14+). The iPhone streams its camera to the Mac over local Wi‑Fi; the Mac becomes a big live monitor plus a full remote control — tap-to-focus, shutter/record trigger, zoom, lens switch, exposure, torch. It works in both portrait/vertical and landscape/horizontal. The actual recording is real 4K captured on-device on the iPhone and auto-transferred to the Mac when you stop — the live Mac preview is a separate, lighter monitoring feed, not the saved file.
+CamBridge is two free TestFlight beta apps built by a solo creator (Alpha Tjänster AB, Sweden): **CamBridge Camera** for iPhone (iOS 17+) and **CamBridge Studio** for Mac (macOS 14+). The iPhone streams its camera to the Mac over local Wi‑Fi or a USB cable; the Mac becomes a big live monitor plus a full remote control — tap-to-focus, shutter/record trigger, zoom, lens switch, exposure, torch. It works in both portrait/vertical and landscape/horizontal. The actual recording is real 4K captured on-device on the iPhone and auto-transferred to the Mac when you stop — the live Mac preview is a separate, lighter monitoring feed, not the saved file.
 
 ## The problems CamBridge solves
 
@@ -28,30 +28,36 @@ These are the exact situations people search for and land on this site trying to
 - Exposure compensation adjustment from the Mac, reflected live.
 - Bring-your-own mic: any mic the iPhone can see, including DJI Mic directly over Bluetooth (no receiver) or via its receiver for full quality, plus USB/wired/Bluetooth headsets, switchable from either device with a live level meter.
 - Real 4K recording on the iPhone, auto-transferred to a chosen folder on the Mac when recording stops.
-- No accounts, no sign-up, no cloud server — iPhone and Mac talk directly over local Wi‑Fi.
+- No accounts, no sign-up, no cloud server — iPhone and Mac talk directly over local Wi‑Fi or a USB cable.
 
 ## What's new (October 2026)
 
-The next TestFlight update for CamBridge Camera (iPhone) and CamBridge Studio (Mac):
+New in TestFlight 1.2.1 for CamBridge Camera (iPhone) and CamBridge Studio (Mac):
 
 - **Lock focus and exposure, then swipe to adjust**: press and hold the iPhone preview, or click and hold on the Mac, to lock focus and exposure like the native Camera app. Swipe up or down to brighten or darken. After a tap, focus returns to auto when the scene changes.
 - **Photos land on the Mac too**: photos, including ones triggered from the Mac, arrive in the Mac's Footage folder like videos.
 - **Redesigned camera screen and Studio controls**: native Camera look, readable over bright scenes, compact floating controls on the Mac, and a cleaner full screen with grid and level.
 - **Fewer interruptions**: a WhatsApp or phone call that takes the mic no longer causes a camera error (CamBridge keeps filming video only and recovers after the call). The iPhone no longer falls into the StandBy clock while CamBridge is open. Full screen on the Mac exits cleanly with Esc, even after a disconnect. Lens order is 0.5× · 1× · 3×.
-- **Record your Mac's mic**: record your Mac's podcast or USB mic in sync with the iPhone video, auto-merged on the Mac.
+- **Record your Mac's mic**: pick a USB or podcast mic in Studio and every iPhone recording also records it on the Mac, giving you a "<clip> (Mac mic).mov" with the untouched iPhone video plus your Mac mic audio, synced automatically by audio.
 
-## Roadmap (not yet shipped, no promised dates)
+## Shipped in the beta (TestFlight 1.2.1)
 
-- Multi-phone grid — monitor and switch between several iPhones at once.
-- Use a second iPhone as a director's monitor and remote.
-- USB cable streaming, for when Wi‑Fi isn't available.
-- Hardware-encoded HEVC streaming for a sharper, lower-bandwidth live preview (recording itself already doesn't depend on the network).
+- Multi-phone grid — Studio connects to several iPhones at once; click a tile for its program view, with per-phone controls and recording into Footage/<phone name>/.
+- Director mode — a second iPhone running CamBridge Camera acts as the director's monitor and remote (discover cameras on the network or connect by IP; the camera phone can require approval).
+- USB cable link — plug the iPhone into the Mac and Studio detects it automatically; link menu: Auto / Cable only / Wi‑Fi only.
+- HEVC streaming — hardware-encoded monitor stream with JPEG fallback and adaptive bitrate. Recording is always the real on-device 4K file.
+- Mac mic recording — see "What's new".
+
+## Next (not yet shipped, no promised dates)
+
+- Photo resolution setting — native-style 4:3 photos at 12 MP or 48 MP (48 MP on the 1× lens).
+- Smoother camera start-up.
 
 ## Requirements
 
 - iPhone: iOS 17.0 or later.
 - Mac: macOS 14.0 or later, Apple silicon or Intel.
-- Both devices on the same local Wi‑Fi network.
+- Both devices on the same local Wi‑Fi network, or connected by USB cable.
 
 ## Get it
 
@@ -61,7 +67,7 @@ The next TestFlight update for CamBridge Camera (iPhone) and CamBridge Studio (M
 
 ## Privacy
 
-CamBridge Camera and CamBridge Studio communicate directly over the local Wi‑Fi network. There is no account, no sign-up, and no cloud server in the middle — nothing about a shoot leaves the local network. Full details: https://mohsin.se/cambridge-site/privacy.html
+CamBridge Camera and CamBridge Studio communicate directly over the local Wi‑Fi network or a USB cable. There is no account, no sign-up, and no cloud server in the middle — nothing about a shoot leaves the local network. Full details: https://mohsin.se/cambridge-site/privacy.html
 
 ## How CamBridge compares
 

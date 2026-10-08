@@ -6,12 +6,12 @@
 
 You don't need a $1,000 camera rig. You need CamBridge.
 
-Your iPhone already has a cinema-grade camera. Your Mac is already your studio. CamBridge connects them — so you can see your framing big while you record alone, tap your Mac screen to refocus mid-take, and switch between vertical and horizontal without touching a single cable.
+Your iPhone already has a cinema-grade camera. Your Mac is already your studio. CamBridge connects them — so you can see your framing big while you record alone, tap your Mac screen to refocus mid-take, and switch between vertical and horizontal without touching the phone.
 
 - iPhone beta (TestFlight): https://testflight.apple.com/join/xmwz6mKR
 - Mac beta (TestFlight): https://testflight.apple.com/join/X9Hu9RXx
 - Free beta — join now.
-- Roadmap note: hardware-encoded HEVC streaming is on the roadmap for a sharper, lower-bandwidth preview — recording itself never depends on the network: it's real 4K, on-device, on your iPhone, today.
+- Note: the live monitor uses hardware-encoded HEVC streaming (JPEG fallback, adaptive bitrate) — recording itself never depends on the network: it's real 4K, on-device, on your iPhone.
 
 Device pairing shown on the page: iPhone on a small tripod, vertical, connected live to CamBridge Studio on the Mac showing the same shot big and horizontal (orientation follows whatever the iPhone is doing).
 
@@ -30,7 +30,7 @@ No fake numbers, no logos we haven't earned yet — just who this is for and wha
 ## Connected in under a minute (setup)
 
 1. **Open CamBridge on your iPhone** — Prop your iPhone up (a small tripod, a stand, or leaning against something) and open the app.
-2. **Open CamBridge on your Mac** — Open the Mac app on the same Wi‑Fi and your iPhone shows up automatically. No pairing codes.
+2. **Open CamBridge on your Mac** — Open the Mac app on the same Wi‑Fi, or plug in a USB cable, and your iPhone shows up automatically. No pairing codes.
 3. **You're connected — start shooting** — Your shot appears big on your Mac in seconds, with full control ready to go.
 
 ## Everything you need to shoot alone, well (features shipping today)
@@ -78,38 +78,47 @@ Camo Studio and Blackmagic Camera are both real products, both worth trying. Cam
 | Both portrait AND landscape monitoring with full Mac-side remote control | Yes | Webcam-focused | Limited Mac control |
 | Remote tap-to-focus from the Mac | Yes | — | — |
 | Real 4K files auto-moved to your Mac | Yes | — | — |
-| Use a second iPhone as director's monitor | Coming soon | — | — |
+| Use a second iPhone as director's monitor | Yes | — | — |
+| Record a Mac-attached mic in sync | Yes | — | — |
 | Accounts required | None | — | — |
 
-Comparison reflects our understanding as of August 2026 — check each product for current details.
+Comparison reflects our understanding as of October 2026 — check each product for current details.
 
 ## No accounts. Nothing leaves your room. (privacy)
 
-CamBridge Camera and CamBridge Studio talk to each other directly over your local Wi‑Fi network. There's no sign‑up, no server in the middle, and nothing about your shoot leaves your network. Built in Swift, kept simple on purpose — what happens in your room stays between your iPhone and your Mac. Full privacy page: https://mohsin.se/cambridge-site/privacy.html
+CamBridge Camera and CamBridge Studio talk to each other directly over your local Wi‑Fi network or a USB cable. There's no sign‑up, no server in the middle, and nothing about your shoot leaves your network. Built in Swift, kept simple on purpose — what happens in your room stays between your iPhone and your Mac. Full privacy page: https://mohsin.se/cambridge-site/privacy.html
 
 ## What's new (October 2026)
 
-The next TestFlight update for CamBridge Camera (iPhone) and CamBridge Studio (Mac):
+New in TestFlight 1.2.1 for CamBridge Camera (iPhone) and CamBridge Studio (Mac):
 
 - **Lock focus and exposure, then swipe to adjust**: press and hold the iPhone preview, or click and hold on the Mac, to lock focus and exposure like the native Camera app. Swipe up or down to brighten or darken. After a tap, focus returns to auto when the scene changes.
 - **Photos land on the Mac too**: photos, including ones triggered from the Mac, arrive in the Mac's Footage folder like videos.
 - **Redesigned camera screen and Studio controls**: native Camera look, readable over bright scenes, compact floating controls on the Mac, and a cleaner full screen with grid and level.
 - **Fewer interruptions**: a WhatsApp or phone call that takes the mic no longer causes a camera error (CamBridge keeps filming video only and recovers after the call). The iPhone no longer falls into the StandBy clock while CamBridge is open. Full screen on the Mac exits cleanly with Esc, even after a disconnect. Lens order is 0.5× · 1× · 3×.
-- **Record your Mac's mic**: record your Mac's podcast or USB mic in sync with the iPhone video, auto-merged on the Mac.
+- **Record your Mac's mic**: pick a USB or podcast mic in Studio and every iPhone recording also records it on the Mac, giving you a "<clip> (Mac mic).mov" with the untouched iPhone video plus your Mac mic audio, synced automatically by audio.
 
-## What's next in the beta (roadmap)
+## Shipped, and what's next (roadmap)
 
-In active development — not yet shipped, no promised dates. Everything here is honestly labeled Coming Soon until it ships.
+Roadmap items are labeled honestly until they ship, with no promised dates.
 
-- Multi-phone grid — monitor and switch between several iPhones at once.
-- Use a second iPhone as the director's monitor and remote.
-- USB cable streaming, for when Wi‑Fi isn't an option.
-- HEVC streaming for a sharper preview at lower bandwidth.
+Next:
+
+- Photo resolution setting — native-style 4:3 photos at 12 MP or 48 MP (48 MP on the 1× lens).
+- Smoother camera start-up.
+
+Shipped (in the TestFlight beta today):
+
+- Multi-phone grid — Studio connects to several iPhones at once; click a tile for its program view, with per-phone controls and recording into Footage/<phone name>/.
+- Director mode — a second iPhone running CamBridge Camera acts as the director's monitor and remote (discover cameras on the network or connect by IP; the camera phone can require approval).
+- USB cable link — plug the iPhone into the Mac and Studio detects it automatically; link menu: Auto / Cable only / Wi‑Fi only.
+- HEVC streaming — hardware-encoded monitor stream with JPEG fallback and adaptive bitrate. Recording is always the real on-device 4K file.
+- Mac mic recording (1.2.1) — a "(Mac mic)" clip with the untouched iPhone video plus your Mac mic audio, synced automatically.
 
 ## FAQ — straight answers, no marketing spin
 
 **Do I need Wi‑Fi, or can I use a cable?**
-Right now CamBridge needs your iPhone and Mac on the same Wi‑Fi network. USB cable streaming is on the roadmap for when Wi‑Fi isn't an option.
+Either. CamBridge works over the same Wi‑Fi network or over a USB cable. Plug the iPhone into the Mac and Studio detects the cable automatically, and the link menu lets you choose Auto, Cable only or Wi‑Fi only. Recording is always the real 4K file on the iPhone, so the link only carries the live monitor.
 
 **Is this a finished app?**
 No — CamBridge is currently a TestFlight beta distributed through Apple's TestFlight program. That means Apple has reviewed the build, but it's still in active development, things can change, and you're trying it before general release. Join via the buttons on this page.
@@ -121,7 +130,7 @@ The real recording is full-quality 4K captured on the iPhone itself, and it's au
 Yes — two ways. Connect the DJI Mic directly over Bluetooth (no receiver needed) and CamBridge uses it as the recording mic, or plug its receiver into the iPhone for the highest audio quality. One honest physics note: Bluetooth mic audio is voice-call quality on any app — the receiver path always sounds better. The mic's on-body record button reaches the phone only through the receiver (in Bluetooth-only mode DJI's button controls the mic's internal recorder, not your phone — that's a DJI hardware behavior, true in every app).
 
 **Does anything leave my network?**
-No. CamBridge has no accounts, no sign-up, and no cloud server in the middle — your iPhone and Mac talk directly over your local Wi‑Fi. See the privacy page for details.
+No. CamBridge has no accounts, no sign-up, and no cloud server in the middle — your iPhone and Mac talk directly over your local Wi‑Fi or a USB cable. See the privacy page for details.
 
 **What devices does this need?**
 An iPhone running iOS 17 or later, and a Mac running macOS 14 or later (Apple silicon or Intel).
@@ -129,11 +138,14 @@ An iPhone running iOS 17 or later, and a Mac running macOS 14 or later (Apple si
 **Does it cost anything?**
 It's free during the beta. We don't have final pricing figured out yet — when that changes we'll be upfront about it, and people testing it now will be treated well. No specific promises beyond that.
 
+**Can I use more than one iPhone?**
+Yes. CamBridge Studio can connect to several iPhones at once and show them in a grid. Click a tile to open its program view, with per-phone controls and recording. Recordings land in Footage/ in a folder named after each phone. A second iPhone running CamBridge Camera can also act as the director's monitor and remote: it discovers cameras on the network or connects by IP, and the camera phone can require approval.
+
 **How do I report a bug or give feedback?**
 Email mohsin.sapra@gmail.com — real feedback from beta testers directly shapes what gets built next.
 
 **How can I use my Mac to remotely take photos with my iPhone?**
-Open CamBridge Camera on your iPhone and CamBridge Studio on your Mac — the live view shows up big on your Mac, you can tap anywhere in the preview to focus, and click the shutter button from your desk to trigger the photo on the iPhone. No accessories, no cables required.
+Open CamBridge Camera on your iPhone and CamBridge Studio on your Mac — the live view shows up big on your Mac, you can tap anywhere in the preview to focus, and click the shutter button from your desk to trigger the photo on the iPhone. No accessories required, and a cable is optional.
 
 **Why does my vertical iPhone video turn horizontal on the Mac (Continuity Camera / QuickTime)?**
 Apple's Continuity Camera and QuickTime's iPhone camera source are built around a landscape webcam feed — since macOS Sonoma, they auto-rotate, stabilize, and crop vertical footage into 16:9 horizontal. CamBridge is a different kind of app: it's a dedicated Mac monitor and remote control for the iPhone camera, so it streams and shows the true portrait frame with no rotation or cropping.
