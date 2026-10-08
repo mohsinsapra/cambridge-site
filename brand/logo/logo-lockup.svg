@@ -1,16 +1,8 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 340 100" width="340" height="100" role="img" aria-labelledby="cbLockupTitle">
   <title id="cbLockupTitle">CamBridge</title>
-
-  <!-- mark, reused geometry from logomark.svg, no background plate -->
-  <g transform="translate(0,0)">
-    <path d="M 21 76 Q 50 52 79 76" fill="none" stroke="#6FA8A0" stroke-width="7" stroke-linecap="round"/>
-    <circle cx="21" cy="76" r="6.5" fill="#6FA8A0"/>
-    <circle cx="79" cy="76" r="6.5" fill="#6FA8A0"/>
-    <circle cx="50" cy="38" r="21" fill="none" stroke="#E3A855" stroke-width="8"/>
-    <circle cx="50" cy="38" r="6.5" fill="#E3A855"/>
-  </g>
-
-  <!-- wordmark, system font stack, weight + tracking do the work -->
-  <text x="115" y="63" font-family="-apple-system, 'SF Pro Display', 'Helvetica Neue', Arial, sans-serif"
-        font-size="44" font-weight="800" letter-spacing="-0.5" fill="#F5EFE6">CamBridge</text>
+  <path d="M 68.4 31.3 A 26.4 26.4 0 1 0 68.4 68.7" fill="none" stroke="#4C8DFF" stroke-width="10" stroke-linecap="round"/>
+  <path d="M 68.4 31.3 Q 84 50 68.4 68.7" fill="none" stroke="#34D1BF" stroke-width="6.5" stroke-linecap="round"/>
+  <circle cx="68.4" cy="31.3" r="6" fill="#34D1BF"/><circle cx="68.4" cy="68.7" r="6" fill="#34D1BF"/>
+  <circle cx="45.9" cy="50" r="9.5" fill="#E8ECF4"/>
+  <text x="102" y="64" font-family="-apple-system, 'SF Pro Display', 'Helvetica Neue', Arial, sans-serif" font-size="42" font-weight="800" letter-spacing="-1.2" fill="#E8ECF4">CamBridge</text>
 </svg>

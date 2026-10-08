@@ -1,0 +1,7 @@
+# CamBridge app-icon concepts
+
+**1 — Optical Span (`codex-1.svg`).** A bold electric-blue lens ring is crossed by a teal bridge deck with two square supports: one continuous connection between capture and control. The bridge is integrated into the lens rather than drawn as a separate illustration, making this the most direct expression of the CamBridge name. A small cool-white reflection adds an optical cue. The large circular silhouette and thick structural shapes carry the mark at small sizes.
+
+**2 — Device Relay (`codex-2.svg`).** An upright iPhone and a landscape Mac monitor form an asymmetric pair, joined by a thick teal transfer link. A single cool-white lens in the phone identifies the capture device, while the monitor stand identifies the destination for live preview, control, and recorded footage. This is the most literal product story, using squared frames and deliberately minimal device detail to preserve recognition at 16×16 pixels.
+
+**3 — Optical Coupler (`codex-3.svg`).** An electric-blue octagonal lens sits between two opposing, angular connection brackets. The blue upper-left bracket and teal lower-right bracket suggest separate devices coupling around a shared optical channel; their alternating corners give the mark a distinctive rotational silhouette. A small white terminal accent reinforces the hardware character. This is the most abstract direction, with broad polygonal shapes and open navy gaps instead of fine aperture blades or interface details.

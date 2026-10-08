@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024" role="img" aria-labelledby="title">
+  <title id="title">CamBridge — Optical Coupler</title>
+  <rect width="1024" height="1024" fill="#0B1020"/>
+  <path d="M368 160H688V272H416L256 432V688H144V384Z" fill="#4C8DFF"/>
+  <path d="M768 336H880V640L656 864H336V752H608L768 592Z" fill="#34D1BF"/>
+  <path d="M432 336H592L688 432V592L592 688H432L336 592V432Z M464 448L448 464V560L464 576H560L576 560V464L560 448Z" fill="#4C8DFF" fill-rule="evenodd"/>
+  <path d="M688 160H768V272H688Z" fill="#E8ECF4"/>
+</svg>

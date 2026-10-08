@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024" role="img" aria-labelledby="title">
+  <title id="title">CamBridge — Optical Span</title>
+  <rect width="1024" height="1024" fill="#0B1020"/>
+  <circle cx="512" cy="480" r="272" fill="none" stroke="#4C8DFF" stroke-width="112"/>
+  <path d="M144 704V480H880V704H768V592H256V704Z" fill="#34D1BF"/>
+  <path d="M416 272A224 224 0 0 1 512 256" fill="none" stroke="#E8ECF4" stroke-width="48"/>
+</svg>

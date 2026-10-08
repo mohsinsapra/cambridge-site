@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="1024" height="1024" role="img"><title>CamBridge – Focus Frame</title>
+  <rect width="1024" height="1024" fill="#0B1020"/>
+  <!-- viewfinder / focus-reticle corners -->
+  <g fill="none" stroke="#4C8DFF" stroke-width="74" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M 196 376 V 196 H 376"/>
+    <path d="M 648 196 H 828 V 376"/>
+    <path d="M 828 648 V 828 H 648"/>
+    <path d="M 376 828 H 196 V 648"/>
+  </g>
+  <!-- centred lens -->
+  <circle cx="512" cy="512" r="150" fill="none" stroke="#E8ECF4" stroke-width="64"/>
+  <circle cx="512" cy="512" r="52" fill="#34D1BF"/>
+</svg>

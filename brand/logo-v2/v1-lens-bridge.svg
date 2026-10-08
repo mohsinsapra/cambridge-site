@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="1024" height="1024" role="img"><title>CamBridge – Lens Bridge</title>
+  <rect width="1024" height="1024" fill="#0B1020"/>
+  <!-- bridge: one continuous arc running behind the lens, device to device -->
+  <path d="M 150 650 Q 512 250 874 650" fill="none" stroke="#34D1BF" stroke-width="70" stroke-linecap="round"/>
+  <circle cx="150" cy="650" r="66" fill="#34D1BF"/>
+  <circle cx="874" cy="650" r="66" fill="#34D1BF"/>
+  <!-- lens sits on the bridge -->
+  <circle cx="512" cy="512" r="236" fill="#0B1020"/>
+  <circle cx="512" cy="512" r="200" fill="none" stroke="#4C8DFF" stroke-width="80"/>
+  <!-- 6-blade aperture hint -->
+  <g fill="#4C8DFF">
+    <path d="M512 424 L588 468 L588 556 L512 600 L436 556 L436 468 Z"/>
+  </g>
+  <circle cx="512" cy="512" r="40" fill="#0B1020"/>
+</svg>

@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024" role="img" aria-labelledby="title">
+  <title id="title">CamBridge — Device Relay</title>
+  <rect width="1024" height="1024" fill="#0B1020"/>
+  <path d="M144 224H448V800H144Z M224 304V720H368V304Z" fill="#4C8DFF" fill-rule="evenodd"/>
+  <path d="M528 336H880V688H528Z M608 416V608H800V416Z" fill="#4C8DFF" fill-rule="evenodd"/>
+  <path d="M656 656H752V736H832V816H576V736H656Z" fill="#4C8DFF"/>
+  <path d="M320 496H656V592H320Z" fill="#34D1BF"/>
+  <circle cx="296" cy="384" r="48" fill="#E8ECF4"/>
+</svg>
