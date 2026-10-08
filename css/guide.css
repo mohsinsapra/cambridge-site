@@ -1,0 +1,42 @@
+/* Guides: layout for how-to articles. Builds on style.css tokens. */
+.guide { max-width: calc(780px + var(--gutter) * 2); padding-block: clamp(2rem, 5vw, 4rem) clamp(3rem, 7vw, 5rem); }
+.guide h1 { font-size: clamp(1.9rem, 5vw, 2.9rem); margin-bottom: .8rem; }
+.guide h2 { font-size: clamp(1.45rem, 3.2vw, 2rem); letter-spacing: -0.03em; margin: 2.6rem 0 .9rem; scroll-margin-top: 80px; }
+.guide h3 { font-size: 1.12rem; margin: 0 0 .35rem; }
+.guide p { margin: 0 0 1rem; max-width: 68ch; }
+.guide .lead-p { font-size: 1.18rem; color: var(--ink); }
+.guide a:not(.btn) { color: var(--accent-2-text); text-decoration: underline; text-underline-offset: 3px; overflow-wrap: anywhere; }
+.guide ul { list-style: disc; padding-left: 1.2rem; margin: 0 0 1rem; max-width: 68ch; }
+.guide li { margin-bottom: .55rem; }
+.crumbs { font-size: .9rem; color: var(--ink-dim); margin-bottom: 1.4rem; display: flex; flex-wrap: wrap; gap: .3rem .5rem; }
+.crumbs a { color: var(--ink-dim) !important; text-decoration: none !important; }
+.crumbs a:hover { color: var(--accent-text) !important; }
+.byline { color: var(--ink-dim); font-size: .92rem; margin-bottom: 1.4rem; }
+.quick { background: var(--surface); border: 1px solid var(--line-strong); border-left: 4px solid var(--accent); border-radius: 14px; padding: 1.1rem 1.3rem; margin: 1.6rem 0; }
+.quick h2 { font-size: 1.1rem; margin: 0 0 .5rem; letter-spacing: -0.01em; }
+.quick p { margin: 0; }
+.diagram { margin: 1.6rem 0; padding: 1rem; background: var(--surface); border: 1px solid var(--line); border-radius: 14px; color: var(--ink-dim); }
+.diagram svg { display: block; width: 100%; height: auto; max-width: 560px; margin: 0 auto; font-family: var(--display); }
+.gsteps { list-style: none; counter-reset: step; padding: 0; margin: 1.2rem 0; max-width: none; }
+.gsteps li { counter-increment: step; position: relative; padding: 0 0 1.3rem 3.2rem; margin: 0; }
+.gsteps li::before { content: counter(step); position: absolute; left: 0; top: 0; width: 2.2rem; height: 2.2rem; border-radius: 50%; background: var(--accent-btn, var(--accent)); color: var(--on-accent); font-weight: 800; display: grid; place-items: center; }
+.gsteps li::after { content: ""; position: absolute; left: 1.05rem; top: 2.4rem; bottom: .2rem; width: 2px; background: var(--line); }
+.gsteps li:last-child::after { display: none; }
+.gsteps p { margin-bottom: .5rem; }
+.guide .faq-list { margin: 1rem 0 0; }
+.related ul { list-style: none; padding: 0; }
+.related li { padding: .55rem 0; border-bottom: 1px solid var(--line); margin: 0; }
+.cta-box { margin-top: 3rem; padding: 1.6rem; background: var(--surface); border: 1px solid var(--line-strong); border-radius: var(--radius); }
+.cta-box h2 { margin-top: 0; }
+.cta-row { display: flex; flex-wrap: wrap; gap: .8rem; margin: 1rem 0 0 !important; }
+.hub-list { list-style: none; padding: 0 !important; display: grid; gap: .9rem; max-width: none !important; }
+.hub-list li { margin: 0; }
+.hub-list a { display: block; padding: 1.1rem 1.2rem; background: var(--surface); border: 1px solid var(--line); border-radius: 14px; text-decoration: none !important; color: var(--ink) !important; }
+.hub-list a:hover { border-color: var(--accent); }
+.hub-list strong { display: block; font-size: 1.1rem; letter-spacing: -0.015em; margin-bottom: .3rem; }
+.hub-list span { color: var(--ink-dim); font-size: .95rem; }
+@media (max-width: 480px) { .gsteps li { padding-left: 2.8rem; } .cta-row .btn { width: 100%; } }
+.guide .blog-sub { font-size: 1.05rem; margin: 1.6rem 0 .7rem; color: var(--ink-dim); font-weight: 600; letter-spacing: 0; }
+.all-articles { display: inline-block; margin-bottom: 1rem; font-size: .92rem; }
+.guide .hub-list { list-style: none; padding: 0; margin-left: 0; }
+.hub-list time { display: block; margin-top: .45rem; font-size: .82rem; color: var(--ink-dim); }

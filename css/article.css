@@ -1,0 +1,29 @@
+.article-wrap{max-width:820px;padding-block:clamp(5.5rem,10vw,7rem) 4rem}
+.article{overflow-wrap:break-word}
+.article h1{font-size:clamp(1.9rem,5vw,2.9rem);font-weight:800;letter-spacing:-.03em;line-height:1.1;margin-bottom:.6rem}
+.article h2{font-size:clamp(1.4rem,3.4vw,1.9rem);letter-spacing:-.02em;line-height:1.2;margin:2.2rem 0 .7rem}
+.article p,.article li{line-height:1.65;font-size:1.05rem}
+.article p{margin-block:.8rem}
+.article ul{padding-left:1.3rem;margin-block:.8rem}
+.article li{margin-block:.4rem}
+.article a:not(.btn){color:var(--accent-text);text-decoration:underline;text-underline-offset:2px}
+.article .lead{font-size:1.2rem;color:var(--ink-dim)}
+.byline,.crumbs{color:var(--ink-dim);font-size:.9rem}
+.crumbs{margin-bottom:1rem}
+.crumbs a{color:var(--ink-dim)}
+.verdict{border:1px solid var(--line-strong);background:var(--surface);border-radius:1rem;padding:1rem 1.25rem;margin-block:1.5rem}
+.verdict-title{font-weight:800;margin:0 0 .3rem!important;text-transform:uppercase;font-size:.8rem!important;letter-spacing:.08em;color:var(--accent-text)}
+.table-scroll{overflow-x:auto;margin-block:1rem;border:1px solid var(--line);border-radius:.75rem}
+.cmp{border-collapse:collapse;width:100%;min-width:560px;font-size:.95rem}
+.cmp caption{text-align:left;padding:.7rem .9rem;font-weight:700;color:var(--ink-dim)}
+.cmp th,.cmp td{padding:.65rem .9rem;border-top:1px solid var(--line);text-align:left;vertical-align:top;line-height:1.45}
+.cmp thead th{background:var(--surface)}
+.faq-item{border-bottom:1px solid var(--line);padding:.7rem 0}
+.faq-item summary{cursor:pointer;font-weight:700}
+.article-cta{border:1px solid var(--line-strong);border-radius:1rem;padding:1.2rem 1.4rem;margin-top:2.5rem;background:var(--surface)}
+.article-cta h2{margin-top:0}
+.article-cta .btn{margin:.3rem .4rem .3rem 0}
+.disclaimer{font-size:.85rem!important;color:var(--ink-dim)}
+.cards{list-style:none;padding:0!important;display:grid;gap:1rem}
+.cards a{display:block;border:1px solid var(--line-strong);border-radius:1rem;padding:1.1rem 1.3rem;text-decoration:none!important;color:var(--ink)!important;background:var(--surface)}
+.cards span{display:block;color:var(--ink-dim);margin-top:.2rem}

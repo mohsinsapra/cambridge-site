@@ -27,38 +27,46 @@ the identity, consistent with the rest of the site's system-font approach.
 
 ## Palette
 
-A dark, cinematic base with a single warm "recording light" accent (amber/
-gold) and a muted teal secondary accent used for the bridge/connection
-motif and links. Deliberately desaturated and warm rather than neon — this
-is a creator tool, not a gaming HUD.
+**Updated 2026-10-08: "Studio navy + blue"** replaces the earlier amber/brown palette.
+A deep navy base with an electric-blue accent (buttons, active states, eyebrows)
+and a teal secondary accent used for the bridge/connection motif, links and
+"Shipped" tags. The camera-UI yellow (`#FFD60A`/`--ui-yellow`: focus reticle,
+active lens chip, AE/AF LOCK) and the REC red (`--ui-red`) are app-UI colours
+inside the mockups only and are unchanged; `--live` green marks the beta dot.
 
 ### Dark (default)
 
-| Token       | Hex       | Use |
-|-------------|-----------|-----|
-| `--bg`      | `#0C0A08` | Page background. Near-black with a warm brown undertone (not pure #000) so large fields feel cinematic rather than flat/OLED-harsh. |
-| `--surface` | `#17130F` | Cards, the header bar, elevated panels, code-style badges. One step up from `--bg` for layering without a hard border. |
-| `--ink`     | `#F5EFE6` | Primary text. Warm off-white/cream, never pure white — easier on the eyes against the warm-black background and ties back to "film" tonality. |
-| `--ink-dim` | `#A69A8C` | Secondary text, captions, nav links. A warm greige with enough contrast for AA body text on `--bg` and `--surface`. |
-| `--accent`  | `#E3A855` | Primary accent — the "recording light" amber/gold. CTAs, active states, the lens ring in the logo, eyebrow labels. |
-| `--accent-2`| `#6FA8A0` | Secondary accent — a soft muted teal. The "bridge" motif, links, connection lines, secondary badges. Never competes with `--accent` for primary attention. |
+| Token        | Hex       | Use |
+|--------------|-----------|-----|
+| `--bg`       | `#0B1020` | Page background. Deep navy. |
+| `--surface`  | `#141B2E` | Cards, header bar, elevated panels. |
+| `--surface-2`| `#1A2238` | A further step up for nested panels. |
+| `--ink`      | `#E8ECF4` | Primary text. |
+| `--ink-dim`  | `#8A94A8` | Secondary text, captions, nav links. |
+| `--accent`   | `#4C8DFF` | Primary accent: active states, eyebrows, links-as-text. |
+| `--accent-btn`| `#2F6BE8` | Filled button background (white text reaches AA 4.5:1; white on `#4C8DFF` does not). |
+| `--accent-2` | `#34D1BF` | Secondary accent: teal bridge motif, links, "Shipped" tags. |
+| `--on-accent`| `#FFFFFF` | Text on filled accent buttons. |
 
 ### Light
 
-| Token       | Hex       | Use |
-|-------------|-----------|-----|
-| `--bg`      | `#FBF7F0` | Page background. Warm ivory, not stark white — keeps continuity with the dark theme's warmth instead of just inverting to cold white. |
-| `--surface` | `#FFFFFF` | Cards and elevated panels sit on true white against the ivory page background, giving real (not just tonal) elevation. |
-| `--ink`     | `#211B14` | Primary text. Warm near-black. |
-| `--ink-dim` | `#6B6255` | Secondary text — warm taupe, AA-compliant on both `--bg` and `--surface`. |
-| `--accent`  | `#C9821F` | Primary accent, darkened/desaturated from the dark-mode amber so it holds contrast on light backgrounds (the dark-mode value fails AA on white). |
-| `--accent-2`| `#3F7A72` | Secondary accent, deepened teal for the same reason. |
+| Token        | Hex       | Use |
+|--------------|-----------|-----|
+| `--bg`       | `#F6F8FC` | Page background. |
+| `--surface`  | `#FFFFFF` | Cards and elevated panels. |
+| `--surface-2`| `#EEF2F9` | Nested panels. |
+| `--ink`      | `#0E1526` | Primary text. |
+| `--ink-dim`  | `#4B5568` | Secondary text. |
+| `--accent`   | `#2563EB` | Primary accent. |
+| `--accent-btn`| `#1D4ED8` | Filled button background. |
+| `--accent-text`| `#1D4ED8` | Accent used as text. |
+| `--accent-2` | `#0E9F8E` | Secondary accent (fills, borders). |
+| `--accent-2-text`| `#0B766A` | Teal used as text/links (AA on white and `--bg`). |
+| `--on-accent`| `#FFFFFF` | Text on filled accent buttons. |
 
-Both palettes share the same *role* for each token, which is what makes the
-light mode feel like a deliberate reflection of the dark mode rather than a
-naive inversion: surfaces still sit one step lighter than the page, ink is
-always warm rather than neutral gray, and the accent pair keeps its
-amber/teal relationship at a different luminance.
+Both palettes share the same *role* for each token: surfaces sit one step
+lighter than the page, and the accent pair keeps its blue/teal relationship at
+a different luminance. Lines are cool alphas of `--ink`.
 
 ## Usage in the codebase
 
