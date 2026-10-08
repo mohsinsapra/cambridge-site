@@ -92,19 +92,15 @@ CamBridge Camera and CamBridge Studio talk to each other directly over your loca
 
 New in TestFlight 1.2.2 for CamBridge Camera (iPhone) and CamBridge Studio (Mac):
 
-- **PHOTO mode**: 4:3 photos at 12 MP (default) or 48 MP, selectable on the iPhone and from the Mac.
-- **Smooth lens switching**: 0.5× · 1× · 3× glides like the native Camera app.
-- **Smoother start-up** of the iPhone camera.
-- **New look**: new logo, navy, blue and teal brand, and a short logo animation at launch.
-- **More private by default**: sending videos and photos to a Mac is off by default, the iPhone asks once per Mac before sending footage, and Macs are verified cryptographically so another Mac cannot impersonate yours.
+- **One Microphone list in Studio**: pick an iPhone mic or a mic plugged into your Mac. Choose a Mac mic and you get one finished video with that mic's sound, already in sync. No extra audio files to line up, and the leftovers go to the Trash. The sound stays exactly as your mic recorded it, with no automatic volume changes.
+- **Your footage stays private**: footage only goes to Macs you approve. The iPhone asks once for each Mac and checks that it is really your Mac.
+- **PHOTO mode**: 12 MP (default) or 48 MP photos, changeable on the iPhone or from the Mac.
+- **Smooth lens switching**: 0.5× · 1× · 3× glides from one lens to the next, and the camera starts more smoothly.
+- **New look**: a new logo and new colours, with a short logo animation when the iPhone app opens.
 
 ## Shipped, and what's next (roadmap)
 
 Roadmap items are labeled honestly until they ship, with no promised dates.
-
-Next:
-
-- One Microphone list in Studio for iPhone and Mac mics — choose a Mac mic and get one synced video with that mic's audio, with the originals tidied into the Trash.
 
 Shipped (in the TestFlight beta today):
 
@@ -112,8 +108,9 @@ Shipped (in the TestFlight beta today):
 - Director mode — a second iPhone running CamBridge Camera acts as the director's monitor and remote (discover cameras on the network or connect by IP; the camera phone can require approval).
 - USB cable link — plug the iPhone into the Mac and Studio detects it automatically; link menu: Auto / Cable only / Wi‑Fi only.
 - HEVC streaming — hardware-encoded monitor stream with JPEG fallback and adaptive bitrate. Recording is always the real on-device 4K file.
-- Mac mic recording (1.2.1) — a "(Mac mic)" clip with the untouched iPhone video plus your Mac mic audio, synced automatically.
-- PHOTO mode, smooth lens switching, smoother start-up, new look and stronger privacy (1.2.2) — see "What's new".
+- One Microphone list (1.2.2) — pick an iPhone mic or a Mac mic; a Mac mic gives one finished video with that mic's sound, already in sync.
+- Mac mic recording (1.2.1), simplified in 1.2.2 as above.
+- PHOTO mode, smooth lens switching, private-by-default footage and a new look (1.2.2) — see "What's new".
 
 ## FAQ — straight answers, no marketing spin
 
